@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+.mdl-layout__header {
+  background: url('images/header.jpg') center / cover;
+}
+
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
