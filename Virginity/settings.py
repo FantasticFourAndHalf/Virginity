@@ -27,7 +27,7 @@ SECRET_KEY = '+8+fylgi(n3(^_2@f!0pjq@tn=txtb(cq$+nh39cb(=w#c(8l^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['virginity.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -128,7 +128,7 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
 # HEROKU SETTING
-ALLOWED_HOSTS = ['plut0.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['virginity.herokuapp.com', '127.0.0.1']
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
