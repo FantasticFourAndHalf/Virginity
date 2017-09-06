@@ -1,1 +1,1 @@
-web: gunicorn Virginity.wsgi: application --log-file - --log-level debug
+web: gunicorn Virginity.wsgi:application --log-file - --log-level debug
