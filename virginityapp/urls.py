@@ -9,6 +9,7 @@ from django.conf.urls import url
 from virginityapp import views
 
 urlpatterns = [
-    url(r'^', views.index),
-    url(r'^index', views.index),
+    url(r'^$', views.index),
+    url(r'^login/', views.login),
+    url(r'^phone/', views.phone_request),
 ]
