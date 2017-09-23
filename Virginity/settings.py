@@ -158,7 +158,7 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
 # HEROKU SETTING
-ALLOWED_HOSTS = ['virginity.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1']
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 

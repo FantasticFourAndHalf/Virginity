@@ -7,5 +7,8 @@ from Virginity.settings import *
 
 DEBUG = False
 # ImGur Client Production
+
+ALLOWED_HOSTS += ['.herokuapp.com']
+
 IMGUR_CLIENT_ID = '2bcda18a072f658'
 IMGUR_CLIENT_SECRET = 'eb16a3a1783ac786362796970602dbf9e59d6768'
