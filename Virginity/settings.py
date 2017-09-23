@@ -94,8 +94,12 @@ WSGI_APPLICATION = 'Virginity.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'damqs8gb01kko6',
+        'USER': 'nmmclkpsecbgwo',
+        'PASSWORD': 'cc7b59d18821bfa8adb75c45bcf3063a5ff2ca5d2685898be5e427343424a020',
+        'HOST': 'ec2-79-125-26-23.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
