@@ -5,7 +5,7 @@
 
 from Virginity.settings import *
 
-DEBUG = False
+# DEBUG = False
 # ImGur Client Production
 
 ALLOWED_HOSTS += ['.herokuapp.com']
