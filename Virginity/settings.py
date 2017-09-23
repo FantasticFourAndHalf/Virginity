@@ -27,8 +27,7 @@ SECRET_KEY = '+8+fylgi(n3(^_2@f!0pjq@tn=txtb(cq$+nh39cb(=w#c(8l^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['virginity.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
