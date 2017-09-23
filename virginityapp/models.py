@@ -1,9 +1,12 @@
+import os
 from django.contrib.auth.models import AbstractUser
-from django.core.files.storage import FileSystemStorage
+from django.core.files.base import ContentFile
+from django.core.files.storage import FileSystemStorage, default_storage
 from django.db import models
 from django.utils.datetime_safe import datetime
 from imgurpython import ImgurClient
 
+from Virginity import settings
 from Virginity.settings import IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET
 
 
@@ -52,10 +55,11 @@ def dish_image_path(instance, filename):
 
 class ImgurStorage(FileSystemStorage):
     def _save(self, name, content):
-        super(ImgurStorage, self)._save(name, content)
+        path = default_storage.save(name, content)
+        tmp_file = os.path.join(settings.MEDIA_ROOT, path)
         client = ImgurClient(IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET)
-        image = client.upload_from_path(content.path)
-        super(ImgurStorage, self).delete(name)
+        image = client.upload_from_path(tmp_file)
+        default_storage.delete(name)
         return image['link']
 
 
