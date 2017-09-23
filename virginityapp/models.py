@@ -1,8 +1,10 @@
 from django.contrib.auth.models import AbstractUser
+from django.core.files.storage import FileSystemStorage
 from django.db import models
-
-# Create your models here.
 from django.utils.datetime_safe import datetime
+from imgurpython import ImgurClient
+
+from Virginity.settings import IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET
 
 
 class User(AbstractUser):
@@ -42,6 +44,27 @@ class Dish(models.Model):
 
     def __str__(self):
         return self.name
+
+
+def dish_image_path(instance, filename):
+    return 'dish/{0}/{1}'.format(instance.to.id, filename)
+
+
+class ImgurStorage(FileSystemStorage):
+    def _save(self, name, content):
+        super(ImgurStorage, self)._save(name, content)
+        client = ImgurClient(IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET)
+        image = client.upload_from_path(content.path)
+        super(ImgurStorage, self).delete(name)
+        return image['link']
+
+
+class DishImage(models.Model):
+    to = models.ForeignKey(Dish, related_name='dish_image_dish')
+    path = models.ImageField(storage=ImgurStorage())
+
+    def __str__(self):
+        return self.to.name + " " + str(self.path)
 
 
 class Ingredient(models.Model):
@@ -87,3 +110,30 @@ class Reservation(models.Model):
 
     def __str__(self):
         return str(self.table) + " - " + str(self.client) + " : " + str(self.date)
+
+
+class GiftCard(models.Model):
+    value = models.DecimalField(default=5, decimal_places=2, max_digits=6)
+    by = models.ForeignKey(User, related_name='gift_card_client_by', blank='True')
+    to = models.ForeignKey(User, related_name='gift_card_client_to', blank='True')
+
+    description = models.CharField(max_length=256)
+
+    def __str__(self):
+        return str(self.value) + "$ " + str(self.by) + "->" + str(self.to)
+
+
+class Tag(models.Model):
+    name = models.CharField(max_length=64)
+    color = models.CharField(max_length=6)
+
+    def __str__(self):
+        return self.name
+
+
+class Tagged(models.Model):
+    tag = models.ForeignKey(Tag, related_name='tagged_tag', on_delete=models.CASCADE)
+    dish = models.ForeignKey(Dish, related_name='tagged_dish')
+
+    def __str__(self):
+        return str(self.tag) + "->" + str(self.dish)

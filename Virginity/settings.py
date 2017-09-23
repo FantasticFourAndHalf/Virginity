@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.paypal',
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.vk',
+    'allauth.socialaccount.providers.vk'
 ]
 
 SITE_ID = 1
@@ -175,3 +176,7 @@ STATICFILES_DIRS = (
 # Update database configuration with $DATABASE_URL.
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+# ImGur Client local
+IMGUR_CLIENT_ID = 'fb5c245bfbe0ded'
+IMGUR_CLIENT_SECRET = '6c8a4f64e12a4225a383800a9545ab64eb7eeb22'
