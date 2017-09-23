@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.paypal',
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.vk',
-    'allauth.socialaccount.providers.vk'
 ]
 
 SITE_ID = 1

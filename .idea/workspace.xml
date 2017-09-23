@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97cfb71-a135-4bc7-8b93-ef95480e0e3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Virginity/production_settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virginityapp/migrations/0002_dishimage_giftcard_tag_tagged.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virginityapp/migrations/0003_auto_20170923_1239.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/zhufy.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/zhufy.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Virginity/settings.py" afterPath="$PROJECT_DIR$/Virginity/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virginityapp/admin.py" afterPath="$PROJECT_DIR$/virginityapp/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virginityapp/models.py" afterPath="$PROJECT_DIR$/virginityapp/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Virginity/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="172" column="41" lean-forward="true" selection-start-line="172" selection-start-column="41" selection-end-line="172" selection-end-column="41" />
+            <state relative-caret-position="192">
+              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
               <folding>
                 <element signature="e#313#322#0" expanded="true" />
               </folding>
@@ -79,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production_settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="production_settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Virginity/production_settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -134,8 +126,8 @@
         <option value="$PROJECT_DIR$/virginityapp/admin.py" />
         <option value="$PROJECT_DIR$/virginityapp/models.py" />
         <option value="$PROJECT_DIR$/Virginity/client_keys.py" />
-        <option value="$PROJECT_DIR$/Virginity/settings.py" />
         <option value="$PROJECT_DIR$/Virginity/production_settings.py" />
+        <option value="$PROJECT_DIR$/Virginity/settings.py" />
       </list>
     </option>
   </component>
@@ -342,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505727085743</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Image Backend :sunrise:&#10;&#10;- Image now Stores at ImGur. Fixes image missing in production.">
+      <created>1506162106186</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1506162106186</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -406,7 +405,8 @@
     <MESSAGE value="Example page&#10;&#10;First example page. index.html." />
     <MESSAGE value="Models and Basic Files :monkey:&#10;&#10;- Created basic models. Added to admin panel.&#10;- Added html templates for designers.&#10;- Fixed urls and views." />
     <MESSAGE value="All Auth and Template Structure :snake:&#10;&#10;- Social auth. (Facebook, Google, VK, Mail.ru, OK, Instagram, Paypal, Twitter)&#10;- Template structure and text." />
-    <option name="LAST_COMMIT_MESSAGE" value="All Auth and Template Structure :snake:&#10;&#10;- Social auth. (Facebook, Google, VK, Mail.ru, OK, Instagram, Paypal, Twitter)&#10;- Template structure and text." />
+    <MESSAGE value="Image Backend :sunrise:&#10;&#10;- Image now Stores at ImGur. Fixes image missing in production." />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Backend :sunrise:&#10;&#10;- Image now Stores at ImGur. Fixes image missing in production." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,21 +813,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Virginity/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="172" column="41" lean-forward="true" selection-start-line="172" selection-start-column="41" selection-end-line="172" selection-end-column="41" />
-          <folding>
-            <element signature="e#313#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Virginity/production_settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Virginity/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+          <folding>
+            <element signature="e#313#322#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
