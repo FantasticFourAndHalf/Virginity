@@ -44,6 +44,8 @@ class Dish(models.Model):
     calories = models.FloatField(blank=False, default=0)
     price = models.DecimalField(blank=False, default=1, decimal_places=2, max_digits=6)
 
+    description = models.TextField(max_length=256, blank=True)
+
     def __str__(self):
         return self.name
 
