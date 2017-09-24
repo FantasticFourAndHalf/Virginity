@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric"></th>
+            <th class="mdl-data-table__cell--non-numeric">Name</th>
+            <th>Time(ms)</th>
+            <th>Proteins</th>
+            <th>Fats</th>
+            <th>Carbohydrates</th>
+            <th>Calories</th>
+            <th>Price($)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in dishes %}
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <img width="50" height="50" src="{{ i.picture.path }}">
+            </td>
+            <td class="mdl-data-table__cell--non-numeric">{{ i.value.name }}</td>
+            <td>{{ i.value.time }}</td>
+            <td>{{ i.value.proteins }}</td>
+            <td>{{ i.value.fats }}</td>
+            <td>{{ i.value.carbohydrates }}</td>
+            <td>{{ i.value.calories }}</td>
+            <td>
+                <span class="mdl-chip">
+                    <span class="mdl-chip__text">{{ i.value.price }}</span>
+                </span>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+    </table>
+{% endblock %}

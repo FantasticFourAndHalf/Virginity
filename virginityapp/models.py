@@ -1,6 +1,5 @@
 import os
 from django.contrib.auth.models import AbstractUser
-from django.core.files.base import ContentFile
 from django.core.files.storage import FileSystemStorage, default_storage
 from django.db import models
 from django.utils.datetime_safe import datetime
