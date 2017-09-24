@@ -4,6 +4,7 @@ from django.core.files.storage import FileSystemStorage, default_storage
 from django.db import models
 from django.utils.datetime_safe import datetime
 from imgurpython import ImgurClient
+from imgurpython.helpers.error import ImgurClientError
 
 from Virginity import settings
 from Virginity.settings import IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET
@@ -46,6 +47,9 @@ class Dish(models.Model):
 
     description = models.TextField(max_length=256, blank=True)
 
+    class Meta:
+        verbose_name_plural = "dishes"
+
     def __str__(self):
         return self.name
 
@@ -58,10 +62,13 @@ class ImgurStorage(FileSystemStorage):
     def _save(self, name, content):
         path = default_storage.save(name, content)
         tmp_file = os.path.join(settings.MEDIA_ROOT, path)
-        client = ImgurClient(IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET)
-        image = client.upload_from_path(tmp_file)
-        default_storage.delete(name)
-        return image['link']
+        try:
+            client = ImgurClient(IMGUR_CLIENT_ID, IMGUR_CLIENT_SECRET)
+            image = client.upload_from_path(tmp_file)
+            default_storage.delete(name)
+            return image['link']
+        except ImgurClientError:
+            return None
 
 
 class DishImage(models.Model):
