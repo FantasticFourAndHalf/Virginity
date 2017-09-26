@@ -39,6 +39,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virginityapp/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -490,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506326782911</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Secret Key protection :floppy_disk:&#10;&#10;- Secret Key now set by OS Env.">
+      <created>1506402404390</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1506402404390</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -598,7 +615,8 @@
     <MESSAGE value="Admin Panel :new_moon_with_face:&#10;&#10;- Admin Panel now Material based.&#10;- Models like Dishes and Order have sub models on edit/creation page. &#10;- Sub Models Replaced." />
     <MESSAGE value="SITE_ID Update in production" />
     <MESSAGE value="Style Improvements :egg:&#10;&#10;- Color scheme was changed.&#10;- Favicon changed.&#10;- Removed useless HTML code.&#10;- Removed unused images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Style Improvements :egg:&#10;&#10;- Color scheme was changed.&#10;- Favicon changed.&#10;- Removed useless HTML code.&#10;- Removed unused images." />
+    <MESSAGE value="Secret Key protection :floppy_disk:&#10;&#10;- Secret Key now set by OS Env." />
+    <option name="LAST_COMMIT_MESSAGE" value="Secret Key protection :floppy_disk:&#10;&#10;- Secret Key now set by OS Env." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -664,6 +682,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -716,6 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -865,6 +885,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -879,6 +900,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -912,14 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virginityapp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -935,6 +949,14 @@
           <folding>
             <element signature="e#313#322#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virginityapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
