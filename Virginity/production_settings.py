@@ -5,6 +5,8 @@
 
 from Virginity.settings import *
 
+SECRET_KEY = os.environ['SECRET_KEY']
+
 # DEBUG = False
 # ImGur Client Production
 
