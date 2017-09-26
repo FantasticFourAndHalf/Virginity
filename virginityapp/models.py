@@ -23,6 +23,9 @@ class Address(models.Model):
     name = models.CharField(max_length=64, blank=True)
     value = models.CharField(max_length=256, blank=False)
 
+    class Meta:
+        verbose_name_plural = "addresses"
+
     def __str__(self):
         return self.name + "(" + self.value + ")"
 
@@ -125,9 +128,18 @@ class Reservation(models.Model):
 
 
 class GiftCard(models.Model):
+    name = models.CharField(max_length=64, blank=False)
     value = models.DecimalField(default=5, decimal_places=2, max_digits=6)
-    by = models.ForeignKey(User, related_name='gift_card_client_by', blank='True')
-    to = models.ForeignKey(User, related_name='gift_card_client_to', blank='True')
+    price = models.DecimalField(default=5, decimal_places=2, max_digits=6)
+
+    def __str__(self):
+        return self.name
+
+
+class Gift(models.Model):
+    value = models.ForeignKey(GiftCard, related_name='gift_gift_card', blank=False)
+    by = models.ForeignKey(User, related_name='gift_card_client_by', blank=True)
+    to = models.ForeignKey(User, related_name='gift_card_client_to', blank=True)
 
     description = models.CharField(max_length=256)
 

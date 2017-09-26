@@ -59,7 +59,7 @@ class ProductModel(admin.ModelAdmin):
 
 @admin.register(virginityapp.Order)
 class OrderModel(admin.ModelAdmin):
-    icon = '<i class="material-icons">assignment</i>'
+    icon = '<i class="material-icons">shopping_cart</i>'
     inlines = [OrderItemInline]
 
 
@@ -76,3 +76,13 @@ class ReservationModel(admin.ModelAdmin):
 @admin.register(virginityapp.Tag)
 class TagModel(admin.ModelAdmin):
     icon = '<i class="material-icons">local_offer</i>'
+
+
+@admin.register(virginityapp.GiftCard)
+class GiftCardModel(admin.ModelAdmin):
+    icon = '<i class="material-icons">redeem</i>'
+
+
+@admin.register(virginityapp.Gift)
+class GiftModel(admin.ModelAdmin):
+    icon = '<i class="material-icons">card_membership</i>'
