@@ -538,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508836312087</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod">
+      <created>1508836633731</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1508836633731</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -651,7 +658,8 @@
     <MESSAGE value="Secret Key protection :floppy_disk:&#10;&#10;- Secret Key now set by OS Env." />
     <MESSAGE value="Gift Cards :clubs:&#10;&#10;- Gift card Model.&#10;- Gift card available in admin." />
     <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod" />
+    <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
