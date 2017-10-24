@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97cfb71-a135-4bc7-8b93-ef95480e0e3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menu.html" afterPath="$PROJECT_DIR$/templates/menu.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -533,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506417724523</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod">
+      <created>1508836312087</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1508836312087</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -645,7 +650,8 @@
     <MESSAGE value="Style Improvements :egg:&#10;&#10;- Color scheme was changed.&#10;- Favicon changed.&#10;- Removed useless HTML code.&#10;- Removed unused images." />
     <MESSAGE value="Secret Key protection :floppy_disk:&#10;&#10;- Secret Key now set by OS Env." />
     <MESSAGE value="Gift Cards :clubs:&#10;&#10;- Gift card Model.&#10;- Gift card available in admin." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gift Cards :clubs:&#10;&#10;- Gift card Model.&#10;- Gift card available in admin." />
+    <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
