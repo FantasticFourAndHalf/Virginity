@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
-    <ul>
-        <li><a href="/accounts/facebook/login">Facebook</a></li>
-        <li><a href="/accounts/twitter/login">Twitter</a></li>
-        <li><a href="/accounts/instagram/login">Instagram</a></li>
-        <li><a href="/accounts/google/login">Google</a></li>
-    </ul>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <div class="mdl-grid">
+    <div class="mdl-layout-spacer"></div>
+         <div class="mdl-card mdl-cell mdl-cell--4-col">
+                <a href="/accounts/facebook/login" class=" mdl-button btn btn-block btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i>Facebook</a>
+                <a href="/accounts/instagram/login" class="mdl-button btn btn-block btn-social btn-instagram">
+                    <i class="fa fa-instagram fa-fw"></i> Instagram
+                </a>
+                <a href="/accounts/twitter/login" class="mdl-button btn btn-block btn-social btn-vk">
+                    <i class="fa fa-twitter fa-fw"></i>Twitter</a>
+                <a href="/accounts/google/login" class="mdl-button btn btn-block btn-social btn-google">
+                    <i class="fa fa-google-plus"></i> Google+
+                </a>
+         </div>
+    <div class="mdl-layout-spacer"></div>
+    </div>
 {% endblock %}
