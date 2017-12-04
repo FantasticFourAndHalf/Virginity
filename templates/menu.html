@@ -4,77 +4,95 @@
 {% block content %}
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<div class="mdl-grid">
-    <div class="mdl-layout-spacer"></div>
-    <div id="menu">
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="name">Name</button>
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="time">Time(ms)</button>
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="proteins">Proteins</button>
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="fats">Fats</button>
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="carbohydrates">Carbohydrates</button>
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="calories">Calories</button>
-        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="price">Price($)</button>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-                <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-                <input class="search mdl-textfield__input" type="text" id="sample6">
-                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-            </div>
-        </div>
-        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-            <thead>
-            <tr>
-                <th class="mdl-data-table__cell--non-numeric"></th>
-                <th class="mdl-data-table__cell--non-numeric">Name</th>
-                <th>Time(min)</th>
-                <th>Proteins</th>
-                <th>Fats</th>
-                <th>Carbohydrates</th>
-                <th>Calories</th>
-                <th>Price($)</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody class="list">
-            {% for i in dishes %}
-            <tr>
-                <td class="mdl-data-table__cell--non-numeric">
-                     <a href="/dish/{{i.value.id}}">
-                         <img width="50" height="50" src="{{ i.picture.path }}">
-                     </a>
-                </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <a href="/dish/{{i.value.id}}"><div class="name">{{ i.value.name }}</div></a>
-                </td>
-                <td class="time">{{ i.value.time }}</td>
-                <td class="proteins">{{ i.value.proteins }}</td>
-                <td class="fats">{{ i.value.fats }}</td>
-                <td class="carbohydrates">{{ i.value.carbohydrates }}</td>
-                <td class="calories">{{ i.value.calories }}</td>
-                <td class="price">
-                    <span class="mdl-chip">
-                        <span class="mdl-chip__text">{{ i.value.price }}</span>
-                    </span>
-                </td>
-                <td>
-                    <button class="mdl-button mdl-js-button mdl-button--fab">
-                        <i class="material-icons">add</i>
-                    </button>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-        </table>
-    </div>
-    <div class="mdl-layout-spacer"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    .mdl-button--raised{
+    background: white;
+    }
+</style>
+<div id="menu">
+    <input type="text" class="search" placeholder="Search">
+    <button class="sort" data-sort="name">Name</button>
+    <button class="sort" data-sort="time">Time(ms)</button>
+    <button class="sort mdl-layout--large-screen-only" data-sort="proteins">Proteins</button>
+    <button class="sort mdl-layout--large-screen-only" data-sort="fats">Fats</button>
+    <button class="sort mdl-layout--large-screen-only" data-sort="carbohydrates">Carbohydrates</button>
+    <button class="sort" data-sort="calories">Calories</button>
+    <button class="sort" data-sort="price">Price($)</button>
+
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric"></th>
+            <th class="mdl-data-table__cell--non-numeric">Name</th>
+            <th>Time(ms)</th>
+            <th class="mdl-layout--large-screen-only">Proteins</th>
+            <th class="mdl-layout--large-screen-only">Fats</th>
+            <th class="mdl-layout--large-screen-only">Carbohydrates</th>
+            <th>Calories</th>
+            <th>Price($)</th>
+        </tr>
+    </thead>
+    <tbody class="list">
+        {% for i in dishes %}
+        <tr class="mdl-button--raised" id="{{i.value.name}}" onclick="addToOrder()">
+            <td class="mdl-data-table__cell--non-numeric">
+                <img width="50" height="50" src="{{ i.picture.path }}">
+            </td>
+            <td class="mdl-data-table__cell--non-numeric"><div class="name">{{ i.value.name }}</div></td>
+            <td class="time">{{ i.value.time }}</td>
+            <td class="proteins mdl-layout--large-screen-only">{{ i.value.proteins }}</td>
+            <td class="fats mdl-layout--large-screen-only">{{ i.value.fats }}</td>
+            <td class="carbohydrates mdl-layout--large-screen-only">{{ i.value.carbohydrates }}</td>
+            <td class="calories">{{ i.value.calories }}</td>
+            <td class="price">
+                <span class="mdl-chip">
+                    <span class="mdl-chip__text">{{ i.value.price }}</span>
+                </span>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+
 </div>
+<div id="add-to-basket" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+
+
 <script type="text/javascript">
 var options = {
   valueNames: [ 'name', 'time', 'proteins', 'fats', 'carbohydrates', 'calories', 'price' ]
 };
 
 var userList = new List('menu', options);
+</script>
+<script type="text/javascript">
+function addToOrder(){
+var dish = event.currentTarget.id;
+  var snackbarContainer = document.querySelector('#add-to-basket');
+  handler = function(event) {
+    data = {
+        message: dish +' has just removed from order.',
+        timeout: 4000,
+        actionHandler: ok,
+        actionText: 'Ok'
+      };
+      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  };
+  ok = function(event){};
+
+        var data = {
+            message: dish + ' has just added to the order.',
+            timeout: 4000,
+            actionHandler: handler,
+            actionText: 'Undo'
+        };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+}
 </script>
 {% endblock %}
