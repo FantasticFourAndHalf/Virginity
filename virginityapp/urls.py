@@ -13,5 +13,7 @@ urlpatterns = [
     url(r'^login/', views.login),
     url(r'^phone/', views.phone_request),
     url(r'^menu/', views.menu),
-    url(r'dish/(?P<dish_id>[0-9]+)', views.dish)
+    url(r'dish/(?P<dish_id>[0-9]+)', views.dish),
+    url(r'blue/', views.blue),
+    url(r'red/', views.red)
 ]

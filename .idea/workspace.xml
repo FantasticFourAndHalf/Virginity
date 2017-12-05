@@ -2,14 +2,155 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97cfb71-a135-4bc7-8b93-ef95480e0e3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/dish.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Virginity.iml" afterPath="$PROJECT_DIR$/.idea/Virginity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/about.html" afterPath="$PROJECT_DIR$/templates/red/about.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/contacts.html" afterPath="$PROJECT_DIR$/templates/red/contacts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/css/bootstrap.css" afterPath="$PROJECT_DIR$/templates/red/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/css/style.css" afterPath="$PROJECT_DIR$/templates/red/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/about-1-652x492.jpg" afterPath="$PROJECT_DIR$/templates/red/images/about-1-652x492.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/about-2-123x124.png" afterPath="$PROJECT_DIR$/templates/red/images/about-2-123x124.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/about-3-129x121.png" afterPath="$PROJECT_DIR$/templates/red/images/about-3-129x121.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/about-4-985x652.jpg" afterPath="$PROJECT_DIR$/templates/red/images/about-4-985x652.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-1-1920x1080.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-1-1920x1080.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-1-433x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-1-433x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-10-418x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-10-418x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-11-605x606.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-11-605x606.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-12-605x606.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-12-605x606.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-13-605x606.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-13-605x606.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-2-433x313.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-2-433x313.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-3-453x700.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-3-453x700.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-4-982x652.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-4-982x652.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-5-418x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-5-418x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-6-418x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-6-418x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-7-418x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-7-418x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-8-418x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-8-418x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-9-418x315.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-9-418x315.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-1-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-1-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-2-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-2-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-3-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-3-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-4-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-4-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-5-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-5-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-6-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-6-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-7-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-7-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/index-gallery-8-442x332.jpg" afterPath="$PROJECT_DIR$/templates/red/images/index-gallery-8-442x332.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/logo-145x33 (1).png" afterPath="$PROJECT_DIR$/templates/red/images/logo-145x33 (1).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/logo-145x33.png" afterPath="$PROJECT_DIR$/templates/red/images/logo-145x33.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/logo-inverse-145x33 (1).png" afterPath="$PROJECT_DIR$/templates/red/images/logo-inverse-145x33 (1).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/logo-inverse-145x33.png" afterPath="$PROJECT_DIR$/templates/red/images/logo-inverse-145x33.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/menu-1-960x652.jpg" afterPath="$PROJECT_DIR$/templates/red/images/menu-1-960x652.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/menu-2-960x652.jpg" afterPath="$PROJECT_DIR$/templates/red/images/menu-2-960x652.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/menu-3-960x652.jpg" afterPath="$PROJECT_DIR$/templates/red/images/menu-3-960x652.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/menu-4-960x652.jpg" afterPath="$PROJECT_DIR$/templates/red/images/menu-4-960x652.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/parallax-03.jpg" afterPath="$PROJECT_DIR$/templates/red/images/parallax-03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-1-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-1-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-10-183x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-10-183x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-11-183x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-11-183x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-12-183x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-12-183x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-13-183x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-13-183x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-14-1004x335.png" afterPath="$PROJECT_DIR$/templates/red/images/table-14-1004x335.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-2-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-2-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-3-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-3-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-4-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-4-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-5-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-5-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-6-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-6-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-7-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-7-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-8-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-8-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/table-9-142x184.png" afterPath="$PROJECT_DIR$/templates/red/images/table-9-142x184.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/testimonials-1-120x120.jpg" afterPath="$PROJECT_DIR$/templates/red/images/testimonials-1-120x120.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/testimonials-2-120x120.jpg" afterPath="$PROJECT_DIR$/templates/red/images/testimonials-2-120x120.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/images/video-preview-1-1920x703.jpg" afterPath="$PROJECT_DIR$/templates/red/images/video-preview-1-1920x703.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/index.html" afterPath="$PROJECT_DIR$/templates/red/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/js/core.min.js" afterPath="$PROJECT_DIR$/templates/red/js/core.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/js/script.js" afterPath="$PROJECT_DIR$/templates/red/js/script.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/menu.html" afterPath="$PROJECT_DIR$/templates/red/menu.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/reservation.html" afterPath="$PROJECT_DIR$/templates/red/reservation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/table-reservation.html" afterPath="$PROJECT_DIR$/templates/red/table-reservation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/restoran 2.0/Неназваний документ" afterPath="$PROJECT_DIR$/templates/red/Неназваний документ" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/default-skin/default-skin.css" afterPath="$PROJECT_DIR$/templates/blue/css/default-skin/default-skin.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/default-skin/default-skin.png" afterPath="$PROJECT_DIR$/templates/blue/css/default-skin/default-skin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/default-skin/default-skin.svg" afterPath="$PROJECT_DIR$/templates/blue/css/default-skin/default-skin.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/default-skin/preloader.gif" afterPath="$PROJECT_DIR$/templates/blue/css/default-skin/preloader.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/style.css" afterPath="$PROJECT_DIR$/templates/blue/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/style.min.css" afterPath="$PROJECT_DIR$/templates/blue/css/style.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/styles-merged.css" afterPath="$PROJECT_DIR$/templates/blue/css/styles-merged.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/styles-merged.css.map" afterPath="$PROJECT_DIR$/templates/blue/css/styles-merged.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/animate.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/animate.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/bootstrap-datepicker.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/bootstrap-datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/bootstrap.min.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/default-skin.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/default-skin.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/flexslider.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/flexslider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/icomoon.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/icomoon.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/jquery.timepicker.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/jquery.timepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/owl.carousel.min.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/owl.carousel.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/owl.theme.default.min.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/owl.theme.default.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/css/vendor/photoswipe.css" afterPath="$PROJECT_DIR$/templates/blue/css/vendor/photoswipe.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/Read Me.txt" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/Read Me.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/demo-files/demo.css" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/demo-files/demo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/demo-files/demo.js" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/demo-files/demo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/demo.html" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/demo.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/selection.json" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/selection.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon demo/style.css" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon/icomoon.eot" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon/icomoon.svg" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon/icomoon.ttf" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/fonts/icomoon/icomoon.woff" afterPath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/gulpfile.js" afterPath="$PROJECT_DIR$/templates/blue/gulpfile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_1.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_10.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_11.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_12.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_13.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_14.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_15.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_16.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_2.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_3.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_4.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_5.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_6.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_7.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_8.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/hero_bg_9.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/hero_bg_9.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/img_1.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/img_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/img_square_1.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/img_square_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/img_square_2.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/img_square_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/img_square_3.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/img_square_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/img_square_4.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/img_square_4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/img_square_5.jpg" afterPath="$PROJECT_DIR$/templates/blue/img/img_square_5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/logo.png" afterPath="$PROJECT_DIR$/templates/blue/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/img/logo@2x.png" afterPath="$PROJECT_DIR$/templates/blue/img/logo@2x.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/index.html" afterPath="$PROJECT_DIR$/templates/blue/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/custom.js" afterPath="$PROJECT_DIR$/templates/blue/js/custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/custom.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/custom.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/scripts.js" afterPath="$PROJECT_DIR$/templates/blue/js/scripts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/scripts.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/scripts.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/bootstrap-datepicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/bootstrap.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/html5shiv.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/html5shiv.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/imagesloaded.pkgd.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/imagesloaded.pkgd.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/isotope.pkgd.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/isotope.pkgd.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.appear.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.appear.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.countTo.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.countTo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.easing.1.3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.flexslider-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.stellar.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.stellar.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.timepicker.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.timepicker.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.waypoints.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/owl.carousel.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/owl.carousel.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/photoswipe-ui-default.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/photoswipe-ui-default.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/photoswipe.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/photoswipe.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/js/vendor/respond.min.js" afterPath="$PROJECT_DIR$/templates/blue/js/vendor/respond.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/package.json" afterPath="$PROJECT_DIR$/templates/blue/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/scss/_custom-settings.scss" afterPath="$PROJECT_DIR$/templates/blue/scss/_custom-settings.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Front-end/Virginity/scss/style.scss" afterPath="$PROJECT_DIR$/templates/blue/scss/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/include/mdl.html" afterPath="$PROJECT_DIR$/templates/include/mdl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menu.html" afterPath="$PROJECT_DIR$/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/phone.html" afterPath="$PROJECT_DIR$/templates/phone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Virginity/settings.py" afterPath="$PROJECT_DIR$/Virginity/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Virginity/wsgi.py" afterPath="$PROJECT_DIR$/Virginity/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virginityapp/urls.py" afterPath="$PROJECT_DIR$/virginityapp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virginityapp/views.py" afterPath="$PROJECT_DIR$/virginityapp/views.py" />
     </list>
@@ -41,21 +182,41 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="816">
               <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virginityapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="e#77#109#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/blue/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="35" column="94" lean-forward="false" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,7 +225,7 @@
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
+              <caret line="20" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -130,10 +291,11 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/phone.html" />
         <option value="$PROJECT_DIR$/Virginity/urls.py" />
-        <option value="$PROJECT_DIR$/virginityapp/views.py" />
         <option value="$PROJECT_DIR$/templates/dish.html" />
         <option value="$PROJECT_DIR$/templates/menu.html" />
         <option value="$PROJECT_DIR$/virginityapp/urls.py" />
+        <option value="$PROJECT_DIR$/virginityapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/blue/index.html" />
       </list>
     </option>
   </component>
@@ -144,9 +306,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="775" />
+    <option name="y" value="27" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -164,6 +326,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,7 +344,13 @@
               <item name="Virginity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Virginity" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="blue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Virginity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Virginity" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="red" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Virginity" type="b2602c69:ProjectViewProjectNode" />
@@ -196,8 +366,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,11 +376,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="D:\Python\Virginity" />
       <recent name="C:\Users\zhufy\Desktop\Virginity" />
       <recent name="C:\Users\zhufy\Desktop\Virginity\static\images" />
       <recent name="C:\Users\zhufy\Desktop\Virginity\templates" />
-      <recent name="C:\Users\zhufy\Desktop\Virginity\Virginity\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -559,7 +727,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508836633731</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Reborn :evil:&#10;- Created more pages.&#10;- More views.">
+      <created>1512300372267</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1512300372267</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -572,12 +747,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28636363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26742426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5060514" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736155" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32253087" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -594,7 +769,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -674,7 +848,9 @@
     <MESSAGE value="Gift Cards :clubs:&#10;&#10;- Gift card Model.&#10;- Gift card available in admin." />
     <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod" />
     <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod" />
+    <MESSAGE value="Reborn :evil:&#10;- Created more pages.&#10;- More views." />
+    <MESSAGE value="Red And Blue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Red And Blue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -687,13 +863,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Virginity/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -726,9 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="125" column="7" lean-forward="false" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
-          <folding>
-            <element signature="e#313#322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,9 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="125" column="7" lean-forward="false" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
-          <folding>
-            <element signature="e#313#322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,9 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
           <caret line="98" column="6" lean-forward="false" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
-          <folding>
-            <element signature="e#313#322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3754">
           <caret line="221" column="7" lean-forward="true" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="113" lean-forward="false" selection-start-line="3" selection-start-column="113" selection-end-line="3" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,17 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,14 +1079,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
+          <caret line="20" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -959,7 +1102,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="816">
           <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
           <folding />
         </state>
@@ -967,11 +1110,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virginityapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="e#77#109#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="94" lean-forward="false" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>

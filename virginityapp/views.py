@@ -61,3 +61,8 @@ def order(request, order_id):
         for item in order_items:
             context['items'].append(item)
         return render(request, 'order.html', context)
+
+
+def blue(request):
+    return render(request, 'blue/index.html')
+
