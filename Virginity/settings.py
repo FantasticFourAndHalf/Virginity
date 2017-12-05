@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'blue.urls'
+ROOT_URLCONF = 'Virginity.urls'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'blue.wsgi.application'
+WSGI_APPLICATION = 'Virginity.wsgi.application'
 
 DATABASES = {
     'default': {
