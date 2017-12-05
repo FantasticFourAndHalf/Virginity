@@ -63,6 +63,4 @@ def order(request, order_id):
         return render(request, 'order.html', context)
 
 
-def blue(request):
-    return render(request, 'blue/index.html')
 
