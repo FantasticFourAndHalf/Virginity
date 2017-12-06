@@ -2,10 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97cfb71-a135-4bc7-8b93-ef95480e0e3b" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/default-skin/default-skin.css" afterPath="$PROJECT_DIR$/static/css/default-skin/default-skin.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/default-skin/default-skin.png" afterPath="$PROJECT_DIR$/static/css/default-skin/default-skin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/default-skin/default-skin.svg" afterPath="$PROJECT_DIR$/static/css/default-skin/default-skin.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/default-skin/preloader.gif" afterPath="$PROJECT_DIR$/static/css/default-skin/preloader.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/style.min.css" afterPath="$PROJECT_DIR$/static/css/style.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/styles-merged.css" afterPath="$PROJECT_DIR$/static/css/styles-merged.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/styles-merged.css.map" afterPath="$PROJECT_DIR$/static/css/styles-merged.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/animate.css" afterPath="$PROJECT_DIR$/static/css/vendor/animate.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/bootstrap-datepicker.css" afterPath="$PROJECT_DIR$/static/css/vendor/bootstrap-datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/vendor/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/default-skin.css" afterPath="$PROJECT_DIR$/static/css/vendor/default-skin.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/flexslider.css" afterPath="$PROJECT_DIR$/static/css/vendor/flexslider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/icomoon.css" afterPath="$PROJECT_DIR$/static/css/vendor/icomoon.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/jquery.timepicker.css" afterPath="$PROJECT_DIR$/static/css/vendor/jquery.timepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/owl.carousel.min.css" afterPath="$PROJECT_DIR$/static/css/vendor/owl.carousel.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/owl.theme.default.min.css" afterPath="$PROJECT_DIR$/static/css/vendor/owl.theme.default.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/css/vendor/photoswipe.css" afterPath="$PROJECT_DIR$/static/css/vendor/photoswipe.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/Read Me.txt" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/Read Me.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/demo-files/demo.css" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/demo-files/demo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/demo-files/demo.js" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/demo-files/demo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/demo.html" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/demo.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/fonts/icomoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/fonts/icomoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/fonts/icomoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/fonts/icomoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/selection.json" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/selection.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon demo/style.css" afterPath="$PROJECT_DIR$/static/fonts/icomoon demo/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.eot" afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.svg" afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.ttf" afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/fonts/icomoon/icomoon.woff" afterPath="$PROJECT_DIR$/static/fonts/icomoon/icomoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/gulpfile.js" afterPath="$PROJECT_DIR$/static/gulpfile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_1.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_10.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_11.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_12.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_13.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_14.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_15.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_16.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_2.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_3.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_4.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_5.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_6.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_7.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_8.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/hero_bg_9.jpg" afterPath="$PROJECT_DIR$/static/img/hero_bg_9.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/img_1.jpg" afterPath="$PROJECT_DIR$/static/img/img_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/img_square_1.jpg" afterPath="$PROJECT_DIR$/static/img/img_square_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/img_square_2.jpg" afterPath="$PROJECT_DIR$/static/img/img_square_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/img_square_3.jpg" afterPath="$PROJECT_DIR$/static/img/img_square_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/img_square_4.jpg" afterPath="$PROJECT_DIR$/static/img/img_square_4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/img_square_5.jpg" afterPath="$PROJECT_DIR$/static/img/img_square_5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/logo.png" afterPath="$PROJECT_DIR$/static/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/img/logo@2x.png" afterPath="$PROJECT_DIR$/static/img/logo@2x.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/custom.js" afterPath="$PROJECT_DIR$/static/js/custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/custom.min.js" afterPath="$PROJECT_DIR$/static/js/custom.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/scripts.js" afterPath="$PROJECT_DIR$/static/js/scripts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/scripts.min.js" afterPath="$PROJECT_DIR$/static/js/scripts.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/static/js/vendor/bootstrap-datepicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/html5shiv.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/html5shiv.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/imagesloaded.pkgd.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/imagesloaded.pkgd.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/isotope.pkgd.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/isotope.pkgd.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.appear.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.appear.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.countTo.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.countTo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.easing.1.3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.flexslider-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.stellar.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.stellar.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.timepicker.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.timepicker.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/jquery.waypoints.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/owl.carousel.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/owl.carousel.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/photoswipe-ui-default.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/photoswipe-ui-default.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/photoswipe.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/photoswipe.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/js/vendor/respond.min.js" afterPath="$PROJECT_DIR$/static/js/vendor/respond.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/package.json" afterPath="$PROJECT_DIR$/static/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/scss/_custom-settings.scss" afterPath="$PROJECT_DIR$/static/scss/_custom-settings.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/blue/scss/style.scss" afterPath="$PROJECT_DIR$/static/scss/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Virginity/settings.py" afterPath="$PROJECT_DIR$/Virginity/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Virginity/wsgi.py" afterPath="$PROJECT_DIR$/Virginity/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virginityapp/views.py" afterPath="$PROJECT_DIR$/virginityapp/views.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,13 +101,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dish.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dish.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+            <state relative-caret-position="17">
+              <caret line="155" column="59" lean-forward="false" selection-start-line="155" selection-start-column="59" selection-end-line="155" selection-end-column="59" />
               <folding>
-                <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#4885#5889#0" expanded="false" />
+                <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#7;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#9;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -35,50 +133,28 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            <state relative-caret-position="663">
+              <caret line="39" column="69" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virginityapp/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virginityapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-              <folding>
-                <element signature="e#77#109#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Virginity/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
-              <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+            <state relative-caret-position="697">
+              <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+      <file leaf-file-name="discover.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/discover.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Virginity/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="1615">
+              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,46 +163,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blue/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+            <state relative-caret-position="170">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#4587#5591#0" expanded="false" />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/red/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding>
-                <marker date="1512415995482" expanded="false" signature="811:953" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Virginity/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,6 +194,9 @@
       <find>meta</find>
       <find>order</find>
       <find>blue</find>
+      <find>src</find>
+      <find>img</find>
+      <find>Booking</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -168,7 +212,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="admin_panel" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RESET_MODE" value="MIXED" />
@@ -178,13 +222,11 @@
       <list>
         <option value="$PROJECT_DIR$/templates/includes/mdl.html" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/phone.html" />
         <option value="$PROJECT_DIR$/Virginity/static/styles.css" />
         <option value="$PROJECT_DIR$/Virginity/client_keys.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/virginityapp/apps.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/Virginity/production_settings.py" />
         <option value="$PROJECT_DIR$/virginityapp/admin.py" />
         <option value="$PROJECT_DIR$/virginityapp/forms.py" />
@@ -196,11 +238,14 @@
         <option value="$PROJECT_DIR$/templates/dish.html" />
         <option value="$PROJECT_DIR$/templates/menu.html" />
         <option value="$PROJECT_DIR$/templates/blue/index.html" />
-        <option value="$PROJECT_DIR$/virginityapp/views.py" />
         <option value="$PROJECT_DIR$/virginityapp/urls.py" />
         <option value="$PROJECT_DIR$/Virginity/wsgi.py" />
         <option value="$PROJECT_DIR$/Virginity/settings.py" />
         <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/templates/discover.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/virginityapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -232,13 +277,17 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Virginity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Virginity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Virginity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Virginity" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Virginity" type="b2602c69:ProjectViewProjectNode" />
@@ -254,6 +303,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,11 +314,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="D:\Python\Virginity" />
       <recent name="C:\Users\zhufy\Desktop\Virginity" />
       <recent name="C:\Users\zhufy\Desktop\Virginity\static\images" />
-      <recent name="C:\Users\zhufy\Desktop\Virginity\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -636,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512502374153</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Crash Fix.">
+      <created>1512503339762</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1512503339762</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -652,17 +709,16 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26742426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27651516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5060514" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32736155" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32253087" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736155" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@Virginity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4924357" order="7" side_tool="false" content_ui="tabs" />
@@ -672,6 +728,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -767,13 +824,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virginityapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -923,20 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virginityapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3754">
-          <caret line="221" column="7" lean-forward="true" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/include/mdl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -955,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,40 +998,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blue/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#4587#5591#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/red/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <marker date="1512415995482" expanded="false" signature="811:953" ph="..." />
-          </folding>
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1004,49 +1012,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virginityapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Virginity/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Virginity/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3037">
+          <caret line="214" column="16" lean-forward="false" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/discover.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virginityapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="69" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/virginityapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virginityapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="170">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#77#109#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Virginity/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Virginity/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="155" column="59" lean-forward="false" selection-start-line="155" selection-start-column="59" selection-end-line="155" selection-end-column="59" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4885#5889#0" expanded="false" />
+            <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#7;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#9;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

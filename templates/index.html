@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% block head %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Virginity restaurant</title>
+    <title>
+        {% block title %}
+            Virginity restaurant
+        {% endblock %}
+    </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    
+    {% load staticfiles %}
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="{% static "css/styles-merged.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.min.css" %}">
 
   </head>
+  {% endblock %}
   <body>
-    
+    {% block body %}
     <!-- Fixed navbar -->
-    
+    {% block navigation %}
     <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
       <div class="container">
         <div class="navbar-header">
@@ -40,10 +46,11 @@
         </div>
       </div>
     </nav>
-
+    {% endblock %}
+    {% block welcome %}
     <section class="flexslider" data-section="welcome">
       <ul class="slides">
-        <li style="background-image: url(img/hero_bg_1.jpg)" class="overlay" data-stellar-background-ratio="0.5">
+        <li style="background-image: url({% static "img/hero_bg_1.jpg" %})" class="overlay" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
@@ -56,7 +63,7 @@
             </div>
           </div>
         </li>
-        <li style="background-image: url(img/hero_bg_2.jpg)" class="overlay">
+        <li style="background-image: url({% static "img/hero_bg_2.jpg" %})" class="overlay">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
@@ -70,7 +77,7 @@
           </div>
           
         </li>
-        <li style="background-image: url(img/hero_bg_3.jpg)" class="overlay">
+        <li style="background-image: url({% static "img/hero_bg_3.jpg" %})" class="overlay">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
@@ -99,7 +106,7 @@
         </li>-->
       </ul>
     </section>
-
+    {% endblock %}
     <!--<section class="probootstrap-section probootstrap-bg-white">
       <div class="container">
         <div class="row">
@@ -119,8 +126,9 @@
         <!-- END row -->
       <!--</div>
     </section>-->
-<!-- container Featured Dishes -->
-    <section class="probootstrap-section-bg" style="background: url(img/hero_bg_6.jpg) 10% 90% no-repeat; background-size:cover; background-position:0 0;" data-stellar-background-ratio="0.5" data-section="featuredDishes">
+    <!-- container Featured Dishes -->
+    {% block featured_head %}
+    <section class="probootstrap-section-bg" style="background: url({% static "img/hero_bg_6.jpg" %}) 10% 90% no-repeat; background-size:cover; background-position:0 0;" data-stellar-background-ratio="0.5" data-section="featuredDishes">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
@@ -132,23 +140,26 @@
         </div>
       </div>
     </section>
+    {% endblock %}
      <!-- probootstrap-bg-white -->
+    {% block featured_body %}
     <section class="probootstrap-section">
       <div class="container">
         <div id="row" class="row">
           <div class="probootstrap-cell-retro">
             <div class="half">
-
-              <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="image" style="background-image: url(img/img_square_1.jpg);"></div>
-                <div class="text text-center">
-                  <h3>Baked Potato Pizza</h3>
-                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
-                  <p class="price">$20.99</p>
-                </div>
-              </div>
+                {% for dish in dishes %}
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                      <div class="image" style="background-image: url({{ dish.picture.path }});"></div>
+                      <div class="text text-center">
+                        <h3>{{ dish.value.name }}</h3>
+                        <p>{{ dish.value.description }}</p>
+                        <p class="price">${{ dish.value.price }}</p>
+                      </div>
+                    </div>
+                {% endfor %}
               <div class="probootstrap-cell reverse probootstrap-animate" data-animate-effect="fadeIn">
-                <div class="image" style="background-image: url(img/img_square_2.jpg);"></div>
+                <div class="image" style="background-image: url({% static "img/img_square_2.jpg)" %};"></div>
                 <div class="text text-center">
                   <h3>Salted Fried Chicken</h3>
                   <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
@@ -197,101 +208,10 @@
         </div>
       </div>
     </section>
+    {% endblock %}
 
-    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5"  data-section="menu">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center probootstrap-animate">
-            <div class="probootstrap-heading">
-              <h2 class="primary-heading">Discover</h2>
-              <h3 class="secondary-heading">Our Menu</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap-section probootstrap-bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="menus">
-              <li>
-                <figure class="image"><img src="img/img_square_1.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Fried Potatoes with Garlic</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><img src="img/img_square_2.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Tuna Roast Source</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><img src="img/img_square_3.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Roast Beef (4 sticks)</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><img src="img/img_square_4.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Salted Fried Chicken</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="menus">
-              <li>
-                <figure class="image"><img src="img/img_square_5.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Baked Potato Pizza</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><img src="img/img_square_1.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Fried Potatoes with Garlic</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><img src="img/img_square_2.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Salted Fried Chicken</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-              <li>
-                <figure class="image"><img src="img/img_square_3.jpg" alt=""></figure>
-                <div class="text">
-                  <span class="price">$22.99</span>
-                  <h3>Tuna Roast Source</h3>
-                  <p>Crab / Potatoes / Rice</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_5.jpg);"  data-stellar-background-ratio="0.5" data-section="reservation">
-      <div class="container">
+    {% block booking_head %}
+    <section class="probootstrap-section-bg overlay" style="background-image: url({% static "img/hero_bg_5.jpg" %});"  data-stellar-background-ratio="0.5" data-section="reservation">
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
             <div class="probootstrap-heading">
@@ -302,7 +222,9 @@
         </div>
       </div>
     </section>
+    {% endblock %}
 
+    {% block booking_body %}
     <section class="probootstrap-section probootstrap-bg-white">
       <div class="container">
         <div class="row">
@@ -383,8 +305,10 @@
         </div>
       </div>
     </section>
+    {% endblock %}
 
-    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5" data-section="events">
+    {% block events_head %}
+    <section class="probootstrap-section-bg overlay" style="background-image: url({% static "img/hero_bg_4.jpg" %});"  data-stellar-background-ratio="0.5" data-section="events">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center probootstrap-animate">
@@ -396,12 +320,14 @@
         </div>
       </div>
     </section>
+    {% endblock %}
+    {% block events_body %}
     <section class="probootstrap-section">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-4 probootstrap-animate">
             <div class="probootstrap-block-image">
-              <figure><img src="img/img_square_2.jpg" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
+              <figure><img src="{% static "img/img_square_2.jpg" %}" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
               <div class="text">
                 <span class="date">June 29, 2017</span>
                 <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
@@ -412,7 +338,7 @@
           </div>
           <div class="col-md-4 col-sm-4 probootstrap-animate">
             <div class="probootstrap-block-image">
-              <figure><img src="img/img_square_3.jpg" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
+              <figure><img src="{% static "img/img_square_3.jpg" %}" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
               <div class="text">
                 <span class="date">June 29, 2017</span>
                 <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
@@ -423,7 +349,7 @@
           </div>
           <div class="col-md-4 col-sm-4 probootstrap-animate">
             <div class="probootstrap-block-image">
-              <figure><img src="img/img_square_4.jpg" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
+              <figure><img src="{% static "img/img_square_4.jpg" %}" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
               <div class="text">
                 <span class="date">June 29, 2017</span>
                 <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
@@ -435,7 +361,9 @@
         </div>
       </div>
     </section>
+    {% endblock %}
 
+    {% block chat %}
     <section class="probootstrap-section probootstrap-bg-white" data-section="contact">
       <div class="container">
         <div class="row">
@@ -474,7 +402,9 @@
         </div>
       </div>
     </section>
+    {% endblock %}
 
+    {% block footer %}
     <section class="probootstrap-footer">
       <div class="container">
         <div class="row">
@@ -529,9 +459,10 @@
         </div>
       </div>
     </section>
+    {% endblock %}
 
-    <script src="js/scripts.min.js"></script>
-    <script src="js/custom.min.js"></script>
-
+    <script src="{% static "js/scripts.min.js" %}"></script>
+    <script src="{% static "js/custom.min.js" %}"></script>
+    {% endblock %}
   </body>
 </html>
