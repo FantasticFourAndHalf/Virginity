@@ -50,6 +50,8 @@ class Dish(models.Model):
 
     description = models.TextField(max_length=256, blank=True)
 
+    show = models.BooleanField(default=False)
+    
     class Meta:
         verbose_name_plural = "dishes"
 

@@ -8,7 +8,7 @@ from virginityapp.models import Dish
 
 def index(request):
     context = {'dishes': []}
-    for i in models.Dish.objects.all()[:5]:
+    for i in models.Dish.objects.all().filter(show=True):
         picture = models.DishImage.objects.filter(to=i)
         tmp = {'picture': picture[0] if picture else None, 'value': i}
         context['dishes'].append(tmp)
