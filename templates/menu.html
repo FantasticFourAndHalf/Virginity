@@ -72,27 +72,47 @@ var options = {
 var userList = new List('menu', options);
 </script>
 <script type="text/javascript">
+    var order = [];
+
+    function sendToServer() {
+        var data = 'Order = ' + JSON.stringify(order, '', 1);
+        alert(data);
+        $.ajax({
+            url:'',
+            type:'POST',
+            cache:false,
+            data: data,
+            success:function() {
+            }
+        });
+    }
+
 function addToOrder(){
 var dish = event.currentTarget.id;
+order.push(dish);
   var snackbarContainer = document.querySelector('#add-to-basket');
   handler = function(event) {
     data = {
         message: dish +' has just removed from order.',
-        timeout: 4000,
+        timeout: 2000,
         actionHandler: ok,
         actionText: 'Ok'
       };
+      order.pop();
       snackbarContainer.MaterialSnackbar.showSnackbar(data);
+      sendToBack();
+
   };
   ok = function(event){};
 
         var data = {
             message: dish + ' has just added to the order.',
-            timeout: 4000,
+            timeout: 2000,
             actionHandler: handler,
             actionText: 'Undo'
         };
     snackbarContainer.MaterialSnackbar.showSnackbar(data);
+    sendToServer()
 }
 </script>
 {% endblock %}
