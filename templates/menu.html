@@ -1,67 +1,66 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 
 
-{% block content %}
+{% block body %}
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-    .mdl-button--raised{
-    background: white;
-    }
-</style>
-<div id="menu">
+<section class="probootstrap-section probootstrap-bg-white">
     <input type="text" class="search" placeholder="Search">
     <button class="sort" data-sort="name">Name</button>
     <button class="sort" data-sort="time">Time(ms)</button>
-    <button class="sort mdl-layout--large-screen-only" data-sort="proteins">Proteins</button>
-    <button class="sort mdl-layout--large-screen-only" data-sort="fats">Fats</button>
-    <button class="sort mdl-layout--large-screen-only" data-sort="carbohydrates">Carbohydrates</button>
+    <button class="sort" data-sort="proteins">Proteins</button>
+    <button class="sort" data-sort="fats">Fats</button>
+    <button class="sort" data-sort="carbohydrates">Carbohydrates</button>
     <button class="sort" data-sort="calories">Calories</button>
     <button class="sort" data-sort="price">Price($)</button>
-
-    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-        <thead>
-        <tr>
-            <th class="mdl-data-table__cell--non-numeric"></th>
-            <th class="mdl-data-table__cell--non-numeric">Name</th>
-            <th>Time(ms)</th>
-            <th class="mdl-layout--large-screen-only">Proteins</th>
-            <th class="mdl-layout--large-screen-only">Fats</th>
-            <th class="mdl-layout--large-screen-only">Carbohydrates</th>
-            <th>Calories</th>
-            <th>Price($)</th>
-        </tr>
-    </thead>
-    <tbody class="list">
-        {% for i in dishes %}
-        <tr class="mdl-button--raised" id="{{i.value.name}}" onclick="addToOrder()">
-            <td class="mdl-data-table__cell--non-numeric">
-                <img width="50" height="50" src="{{ i.picture.path }}">
-            </td>
-            <td class="mdl-data-table__cell--non-numeric"><div class="name">{{ i.value.name }}</div></td>
-            <td class="time">{{ i.value.time }}</td>
-            <td class="proteins mdl-layout--large-screen-only">{{ i.value.proteins }}</td>
-            <td class="fats mdl-layout--large-screen-only">{{ i.value.fats }}</td>
-            <td class="carbohydrates mdl-layout--large-screen-only">{{ i.value.carbohydrates }}</td>
-            <td class="calories">{{ i.value.calories }}</td>
-            <td class="price">
-                <span class="mdl-chip">
-                    <span class="mdl-chip__text">{{ i.value.price }}</span>
-                </span>
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-    </table>
-
-
-</div>
-<div id="add-to-basket" class="mdl-js-snackbar mdl-snackbar">
-    <div class="mdl-snackbar__text"></div>
-    <button class="mdl-snackbar__action" type="button"></button>
-</div>
-
+    <div class="container">
+        <div class="col-md-6 menu">
+          <ul class="menus list">
+            {% for i in dishes %}
+            {% if forloop.counter|divisibleby:2 %}
+            <li>
+              <figure class="image"><img src="{{ i.picture.path }}" alt="{{ i.value.name }}"></figure>
+              <div class="text">
+                <span class="price">{{ i.value.price }}</span>
+                <h3 class="name">{{ i.value.name }}</h3>
+                <p> {{ i.value.time|floatformat }} min / {{ i.value.calories|floatformat }} cal</p>
+                <p class="proteins" hidden>{{ i.value.proteins}} </p>
+                <p class="fats" hidden>{{ i.value.fats }} </p>
+                <p class="carbohydrates" hidden>{{ i.value.carbohydrates }}</p>
+                <p class="calories" hidden>{{ i.value.calories }}</p>
+                <p class="time" hidden>{{ i.value.time }}</p>
+              </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-6">
+                <ul class="menus list">
+                  {% for i in dishes %}
+                  {% if not forloop.counter|divisibleby:2 %}
+                    <li>
+                    <figure class="image"><img src="{{ i.picture.path }}" alt="{{ i.value.name }}"></figure>
+                    <div class="text">
+                      <span class="price">{{ i.value.price }}</span>
+                      <h3 class="name">{{ i.value.name }}</h3>
+                      <p> {{ i.value.time }} min / {{ i.value.calories }} cal</p>
+                      <p class="proteins" hidden>{{ i.value.proteins}} </p>
+                      <p class="fats" hidden>{{ i.value.fats }} </p>
+                      <p class="carbohydrates" hidden>{{ i.value.carbohydrates }}</p>
+                      <p class="calories" hidden>{{ i.value.calories }}</p>
+                      <p class="time" hidden>{{ i.value.time }}</p>
+                    </div>
+                  </li>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+      </div>
+    </div>
+  </section>
 
 
 <script type="text/javascript">
@@ -71,6 +70,7 @@ var options = {
 
 var userList = new List('menu', options);
 </script>
+
 <script type="text/javascript">
     var order = [];
 
