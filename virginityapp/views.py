@@ -3,10 +3,16 @@ from django.http import HttpResponse
 from django.shortcuts import render
 # Create your views here.
 from virginityapp import models
+from virginityapp.models import Dish
 
 
 def index(request):
-    return render(request, 'base.html')
+    context = {'dishes': []}
+    for i in models.Dish.objects.all()[:5]:
+        picture = models.DishImage.objects.filter(to=i)
+        tmp = {'picture': picture[0] if picture else None, 'value': i}
+        context['dishes'].append(tmp)
+    return render(request, 'index.html', context)
 
 
 def login(request):
