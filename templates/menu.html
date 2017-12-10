@@ -34,8 +34,21 @@
 
 </script>
 <script>
-    function createMenuItems(MenuItems) {
-        //TODO
+    function createMenuItems(MenuItems, submenu) {
+        var subMenu = submenu.parentElement.children[1];
+        subMenu.innerHTML = "";
+
+        for( var i = 0; i < MenuItems.length; i++) {
+           var obj = (JSON.parse(MenuItems[0].value))[0];
+           var li = document.createElement("li");
+           var item = document.createElement("a");
+           var itemPrice = document.createElement("span");
+           itemPrice.innerHTML = obj.fields.price+" грн.";
+           item.innerHTML = obj.fields.name;
+           item.appendChild(itemPrice);
+           li.appendChild(item);
+           subMenu.appendChild(li);
+        }
     }
 
 
@@ -43,7 +56,7 @@
         var menuCategory = item.id;
         if (menuCategory) {
             $.get( menuCategory, function( data ) {
-                createMenuItems(data);
+                createMenuItems(data.dishes,item);
             });
          }
     }
@@ -64,15 +77,9 @@
 
                 <li id="one" class="files">
 
-                    <a href="#one" id="5">Аперетиви<span>495</span></a>
+                    <a href="#one" id="1">Аперетиви<span>495</span></a>
 
                     <ul class="sub-menu">
-
-                        <li><a href="#"><em>01</em>Блюдо 1<span>42 грн</span></a></li>
-
-                        <li><a href="#"><em>02</em>Блюдо 2<span>87 грн</span></a></li>
-
-                        <li><a href="#"><em>03</em>Блюдо 3<span>366 грн</span></a></li>
 
                     </ul>
 
@@ -80,13 +87,9 @@
 
                 <li id="two" class="mail">
 
-                    <a href="#two">Салати<span>26</span></a>
+                    <a href="#two" id="2">Салати<span>26</span></a>
 
                     <ul class="sub-menu">
-
-                        <li><a href="#"><em>01</em>Блюдо 1<span>9 грн</span></a></li>
-
-                        <li><a href="#"><em>02</em>Блюдо 2<span>14 грн</span></a></li>
 
                     </ul>
 
@@ -94,15 +97,9 @@
 
                 <li id="three" class="cloud">
 
-                    <a href="#three">Перші страви<span>58</span></a>
+                    <a href="#three" id="4">Перші страви<span>58</span></a>
 
                     <ul class="sub-menu">
-
-                        <li><a href="#"><em>01</em>Блюдо 1<span>12 грн</span></a></li>
-
-                        <li><a href="#"><em>02</em>Блюдо 2<span>19 грн</span></a></li>
-
-                        <li><a href="#"><em>03</em>Блюдо 3<span>27 грн</span></a></li>
 
                     </ul>
 
@@ -110,15 +107,9 @@
 
                 <li id="four" class="sign">
 
-                    <a href="#four">Основні блюда</a>
+                    <a href="#four" id="5">Основні блюда</a>
 
                     <ul class="sub-menu">
-
-                        <li><a href="#"><em>01</em>Блюдо 1</a></li>
-
-                        <li><a href="#"><em>02</em>Блюдо 2</a></li>
-
-                        <li><a href="#"><em>03</em>Блюдо 3</a></li>
 
                     </ul>
 
