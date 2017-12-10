@@ -34,22 +34,18 @@
 
 </script>
 <script>
-    function createMenuItems(MenuItemsJSON) {
+    function createMenuItems(MenuItems) {
         //TODO
     }
 
 
     function getMenuItems(item) {
-        var xhr = new XMLHttpRequest();
-        var categoryName = item.id;
-        //xhr.open('GET', categoryName, false);
-        //xhr.send();
-
-        if (xhr.status != 200) {
-          console.log( xhr.status + ': ' + xhr.statusText );
-        } else {
-            createMenuItems(xhr.responseText);
-        }
+        var menuCategory = item.id;
+        if (menuCategory) {
+            $.get( menuCategory, function( data ) {
+                createMenuItems(data);
+            });
+         }
     }
 </script>
 
@@ -68,7 +64,7 @@
 
                 <li id="one" class="files">
 
-                    <a href="#one">Аперетиви<span>495</span></a>
+                    <a href="#one" id="5">Аперетиви<span>495</span></a>
 
                     <ul class="sub-menu">
 
