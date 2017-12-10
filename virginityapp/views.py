@@ -1,6 +1,7 @@
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
+from django.core import serializers
 # Create your views here.
 from virginityapp import models
 from virginityapp.models import Dish
@@ -58,7 +59,7 @@ def phone_request(request):
 
 
 @login_required
-def order(request, order_id):
+def order(request, order_id):   
     order = models.Order.objects.get(id=order_id, client=request.user.id)
     if order is not None:
         context = {'order': order,
@@ -69,4 +70,15 @@ def order(request, order_id):
         return render(request, 'order.html', context)
 
 
+def get_dishes_by_tag(reqest, tag_id):
+    tagged = models.Tagged.objects.filter(tag=tag_id)
+    dishes = [x.dish.id for x in tagged]
+    dishes = models.Dish.objects.filter(id__in=dishes)
+    context = {'dishes': []}
+    for i in dishes:
+        picture = models.DishImage.objects.filter(to=i)
+        tmp = {'picture':  serializers.serialize('json', picture) if picture else None,
+               'value': serializers.serialize('json', models.Dish.objects.filter(pk=i.id))}
+        context['dishes'].append(tmp)
+    return JsonResponse(context)
 
