@@ -3,8 +3,56 @@
 
 {% block body %}
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js" xmlns="http://www.w3.org/1999/html"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+		$(document).ready(function() {
+    		var accordion_head = $('.accordion > li > a'),
+				accordion_body = $('.accordion li > .sub-menu');
+
+			accordion_head.on('click', function(event) {
+				// Disable header links
+
+				event.preventDefault();
+
+				if ($(this).attr('class') != 'active'){
+					accordion_body.slideUp('normal');
+					$(this).next().stop(true,true).slideToggle('normal');
+					accordion_head.removeClass('active');
+					$(this).addClass('active');
+					getMenuItems(this);
+				} else {
+					$(this).next().stop(true,true).slideToggle('normal');
+				}
+
+			});
+
+		});
+
+</script>
+<script>
+    function createMenuItems(MenuItemsJSON) {
+        //TODO
+    }
+
+
+    function getMenuItems(item) {
+        var xhr = new XMLHttpRequest();
+        var categoryName = item.id;
+        //xhr.open('GET', categoryName, false);
+        //xhr.send();
+
+        if (xhr.status != 200) {
+          console.log( xhr.status + ': ' + xhr.statusText );
+        } else {
+            createMenuItems(xhr.responseText);
+        }
+    }
+</script>
+
 <section class="probootstrap-section probootstrap-bg-white">
     <input type="text" class="search" placeholder="Search">
     <button class="sort" data-sort="name">Name</button>
@@ -15,50 +63,73 @@
     <button class="sort" data-sort="calories">Calories</button>
     <button class="sort" data-sort="price">Price($)</button>
     <div class="container">
-        <div class="col-md-6 menu">
-          <ul class="menus list">
-            {% for i in dishes %}
-            {% if forloop.counter|divisibleby:2 %}
-            <li>
-              <figure class="image"><img src="{{ i.picture.path }}" alt="{{ i.value.name }}"></figure>
-              <div class="text">
-                <span class="price">{{ i.value.price }}</span>
-                <h3 class="name">{{ i.value.name }}</h3>
-                <p> {{ i.value.time|floatformat }} min / {{ i.value.calories|floatformat }} cal</p>
-                <p class="proteins" hidden>{{ i.value.proteins}} </p>
-                <p class="fats" hidden>{{ i.value.fats }} </p>
-                <p class="carbohydrates" hidden>{{ i.value.carbohydrates }}</p>
-                <p class="calories" hidden>{{ i.value.calories }}</p>
-                <p class="time" hidden>{{ i.value.time }}</p>
-              </div>
-            </li>
-            {% endif %}
-            {% endfor %}
-          </ul>
+        <div id="wrapper-250">
+            <ul class="accordion">
+
+                <li id="one" class="files">
+
+                    <a href="#one">Аперетиви<span>495</span></a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="#"><em>01</em>Блюдо 1<span>42 грн</span></a></li>
+
+                        <li><a href="#"><em>02</em>Блюдо 2<span>87 грн</span></a></li>
+
+                        <li><a href="#"><em>03</em>Блюдо 3<span>366 грн</span></a></li>
+
+                    </ul>
+
+                </li>
+
+                <li id="two" class="mail">
+
+                    <a href="#two">Салати<span>26</span></a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="#"><em>01</em>Блюдо 1<span>9 грн</span></a></li>
+
+                        <li><a href="#"><em>02</em>Блюдо 2<span>14 грн</span></a></li>
+
+                    </ul>
+
+                </li>
+
+                <li id="three" class="cloud">
+
+                    <a href="#three">Перші страви<span>58</span></a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="#"><em>01</em>Блюдо 1<span>12 грн</span></a></li>
+
+                        <li><a href="#"><em>02</em>Блюдо 2<span>19 грн</span></a></li>
+
+                        <li><a href="#"><em>03</em>Блюдо 3<span>27 грн</span></a></li>
+
+                    </ul>
+
+                </li>
+
+                <li id="four" class="sign">
+
+                    <a href="#four">Основні блюда</a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="#"><em>01</em>Блюдо 1</a></li>
+
+                        <li><a href="#"><em>02</em>Блюдо 2</a></li>
+
+                        <li><a href="#"><em>03</em>Блюдо 3</a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
         </div>
-        <div class="col-md-6">
-                <ul class="menus list">
-                  {% for i in dishes %}
-                  {% if not forloop.counter|divisibleby:2 %}
-                    <li>
-                    <figure class="image"><img src="{{ i.picture.path }}" alt="{{ i.value.name }}"></figure>
-                    <div class="text">
-                      <span class="price">{{ i.value.price }}</span>
-                      <h3 class="name">{{ i.value.name }}</h3>
-                      <p> {{ i.value.time }} min / {{ i.value.calories }} cal</p>
-                      <p class="proteins" hidden>{{ i.value.proteins}} </p>
-                      <p class="fats" hidden>{{ i.value.fats }} </p>
-                      <p class="carbohydrates" hidden>{{ i.value.carbohydrates }}</p>
-                      <p class="calories" hidden>{{ i.value.calories }}</p>
-                      <p class="time" hidden>{{ i.value.time }}</p>
-                    </div>
-                  </li>
-                  </li>
-                  {% endif %}
-                  {% endfor %}
-                </ul>
-              </div>
-      </div>
     </div>
   </section>
 
