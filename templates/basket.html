@@ -39,25 +39,25 @@
             </tr>
         </thead>
         <tbody class="list">
-            {% for i in dishes %}
+            {% for i in items %}
             <tr>
                 <td hidden>{{ i.value.id }}</td>
                 <td class="mdl-data-table__cell--non-numeric">
-                     <a href="/dish/{{i.value.id}}">
-                         <img width="50" height="50" src="{{ i.picture.path }}">
+                     <a href="/dish/{{i.dish.id}}">
+                         <img width="50" height="50" src="{{ i.dish.picture.path }}">
                      </a>
                 </td>
                 <td class="mdl-data-table__cell--non-numeric">
-                    <a href="/dish/{{i.value.id}}"><div class="name">{{ i.value.name }}</div></a>
+                    <a href="/dish/{{i.dish.id}}"><div class="name">{{ i.dish.name }}</div></a>
                 </td>
-                <td class="time">{{ i.value.time }}</td>
-                <td class="proteins mdl-layout--large-screen-only">{{ i.value.proteins }}</td>
-                <td class="fats mdl-layout--large-screen-only">{{ i.value.fats }}</td>
-                <td class="carbohydrates mdl-layout--large-screen-only">{{ i.value.carbohydrates }}</td>
-                <td class="calories mdl-layout--large-screen-only">{{ i.value.calories }}</td>
+                <td class="time">{{ i.dish.time }}</td>
+                <td class="proteins mdl-layout--large-screen-only">{{ i.dish.proteins }}</td>
+                <td class="fats mdl-layout--large-screen-only">{{ i.dish.fats }}</td>
+                <td class="carbohydrates mdl-layout--large-screen-only">{{ i.dish.carbohydrates }}</td>
+                <td class="calories mdl-layout--large-screen-only">{{ i.dish.calories }}</td>
                 <td class="price">
                     <span class="mdl-chip">
-                        <span class="mdl-chip__text">{{ i.value.price }}</span>
+                        <span class="mdl-chip__text">{{ i.dish.price }}</span>
                     </span>
                 </td>
                 <td class="number-of-servings"><input type="number"></td>

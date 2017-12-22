@@ -61,3 +61,13 @@ def order(request, order_id):
         for item in order_items:
             context['items'].append(item)
         return render(request, 'order.html', context)
+
+def basket(request):
+    cart = models.Cart.objects.all()#filter(user=request.user)
+    context = {'items': []}
+    for i in cart:
+        picture = models.DishImage.objects.filter(to=i.dish)
+        i.dish.picture = picture[0]
+        print(i.dish.picture)
+        context['items'].append(i)
+    return render(request, 'basket.html', context)

@@ -161,3 +161,9 @@ class Tagged(models.Model):
 
     def __str__(self):
         return str(self.tag) + "->" + str(self.dish)
+
+
+class Cart(models.Model):
+    user = models.ForeignKey(User, related_name='cart_user', on_delete=models.CASCADE)
+    dish = models.ForeignKey(Dish, related_name='cart_dish', on_delete=models.CASCADE)
+    multiplicity = models.IntegerField(default=1)
