@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<div class="mdl-grid">
+    <div class="mdl-layout-spacer"></div>
+    <div id="menu">
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="name">Name</button>
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="time">Time(min)</button>
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="proteins">Proteins</button>
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="fats">Fats</button>
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="carbohydrates">Carbohydrates</button>
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="calories">Calories</button>
+        <button class="sort mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-sort="price">Price($)</button>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+                <input class="search mdl-textfield__input" type="text" id="sample6">
+                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+            </div>
+        </div>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <thead>
+            <tr>
+                <th hidden>ID</th>
+                <th class="mdl-data-table__cell--non-numeric"></th>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th>Time(min)</th>
+                <th class="mdl-layout--large-screen-only">Proteins</th>
+                <th class="mdl-layout--large-screen-only">Fats</th>
+                <th class="mdl-layout--large-screen-only">Carbohydrates</th>
+                <th class="mdl-layout--large-screen-only">Calories</th>
+                <th>Price($)</th>
+                <th>Number of servings</th>
+            </tr>
+        </thead>
+        <tbody class="list">
+            {% for i in dishes %}
+            <tr>
+                <td hidden>{{ i.value.id }}</td>
+                <td class="mdl-data-table__cell--non-numeric">
+                     <a href="/dish/{{i.value.id}}">
+                         <img width="50" height="50" src="{{ i.picture.path }}">
+                     </a>
+                </td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    <a href="/dish/{{i.value.id}}"><div class="name">{{ i.value.name }}</div></a>
+                </td>
+                <td class="time">{{ i.value.time }}</td>
+                <td class="proteins mdl-layout--large-screen-only">{{ i.value.proteins }}</td>
+                <td class="fats mdl-layout--large-screen-only">{{ i.value.fats }}</td>
+                <td class="carbohydrates mdl-layout--large-screen-only">{{ i.value.carbohydrates }}</td>
+                <td class="calories mdl-layout--large-screen-only">{{ i.value.calories }}</td>
+                <td class="price">
+                    <span class="mdl-chip">
+                        <span class="mdl-chip__text">{{ i.value.price }}</span>
+                    </span>
+                </td>
+                <td class="number-of-servings"><input type="number"></td>
+                <td class="">
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <i class="material-icons">delete</i>
+                    </button>
+                </td>
+
+            </tr>
+            {% endfor %}
+        <tr>
+            <td>Total price</td>
+            <
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="mdl-layout-spacer"></div>
+</div>
+<script type="text/javascript">
+var options = {
+  valueNames: [ 'name', 'time', 'proteins', 'fats', 'carbohydrates', 'calories', 'price' ],
+  page: 20,
+  pagination: true
+};
+
+var userList = new List('menu', options);
+</script>
+{% endblock %}
