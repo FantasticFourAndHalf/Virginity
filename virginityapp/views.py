@@ -32,13 +32,10 @@ def dish(request, dish_id):
         return HttpResponse(404)
 
 
-def add_to_order(request, order_id, dish_id):
-    order = models.Order.objects.get(id=order_id, client=request.user.id)
+def add_to_cart(request, dish_id):
     dish = models.Dish.objects.get(id=dish_id)
     if request.method == 'POST':
-        item = models.OrderItem()
-        item.order = order
-        item.dish = dish
+        item = models.Cart(user=request.user, dish=dish)
         item.save()
         return HttpResponse('OK')
 
