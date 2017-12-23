@@ -288,5 +288,38 @@ h1, h2, h3, h4, h5, h6{
     font-size: 12px;
 }
 
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+#history {
+  color: #fff;
+  height: 176px;
+  background: url('images/index-11-605x606.jpg') center / cover;
+}
+#start {
+  color: #fff;
+  height: 176px;
+  background: url('images/image5.jpg') center / cover;
+}
 
+#euro {
+  color: #fff;
+  height: 176px;
+  background: url('images/image4.jpg') center / cover;
+}
+
+#comfort {
+  color: #fff;
+  height: 176px;
+  background: url('images/image3.jpg') center / cover;
+}
+
+#friendly {
+  color: #fff;
+  height: 176px;
+  background: url('images/index-11-605x606.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
 

@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
+    <script>
+    function addToBasket(id) {
+       var url = "/cart/"+id;
+       $.ajax({
+          url: url,
+          type: "GET"
+        });
+    }
+    </script>
     <div class="mdl-grid">
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
@@ -10,8 +19,8 @@
                 <img width="350" height="350" src="{{ picture.path }}">
             </div>
             <div class="mdl-card__menu">
-              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                <i class="material-icons">share</i>
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="addToBasket({{ value.id }})">
+                <i class="material-icons">add</i>
               </button>
             </div>
         </div>

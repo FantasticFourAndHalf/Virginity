@@ -93,7 +93,7 @@ class Ingredient(models.Model):
 
 class Order(models.Model):
     client = models.ForeignKey(User, related_name='order_client', blank=True)
-    address = models.ForeignKey(Address, related_name='order_address', blank=True)
+    address = models.ForeignKey(Address, related_name='order_address', blank=True, null=True)
     date = models.DateTimeField(default=datetime.now)
     delivery = models.BooleanField(default=False)
 

@@ -25,12 +25,11 @@
         <meta name="msapplication-TileColor" content="#3372DF">
     {%  endblock   %}
     <link rel="stylesheet" href="{% static "styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/slicebox.css" %}">
-    <link rel="stylesheet" href="{% static "css/material.css" %}">
     {% include 'include/mdl.html' %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
@@ -85,59 +84,85 @@
                         </div>
                     </div>
                 </section>
-                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                            <h2 class="mdl-cell mdl-cell--12-col">History</h2>
-                            <div class="section__circle-container mdl-cell mdl-cell--7-col mdl-cell--1-col-phone">
-                                <image src="{% static "images/index-11-605x606.jpg" %}" ></image>
-                            </div>
-                            <div class="section__text mdl-cell mdl-cell--5-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
-                                <h3>The Verginity Restaurant</h3>
-                                <h4>Verginity Restaurant & Bar is a traditional European cuisine venue, serving the best dishes and drinks from across the range of European cuisines. A definitive neighborhood joint in Davis Square, Resto offers a laid-back dining experience in a casual setting to guests from all walks of life. Honest food and honest drinks set the foundation of our place's menu!</h4>
-                                <br><br><br>
-                                <img src="{% static "images/winner.png" %}">
+                <section class="section--center mdl-grid">
+                    <div class="mdl-grid">
+                    <div class="mdl-card mdl-cell demo-card-wide mdl-cell--6-col mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title" id="history">
+                        <h2 class="mdl-card__title-text">History</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                          Virginity Restaurant & Bar is a traditional European cuisine venue, serving the best dishes and drinks from across the range of European cuisines. A definitive neighborhood joint in Davis Square, Resto offers a laid-back dining experience in a casual setting to guests from all walks of life. Honest food and honest drinks set the foundation of our place's menu!</h4>
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <img src="{% static "images/winner.png" %}">
                                 <img src="{% static "images/choice.png" %}">
-                            </div>
-                        </div>
+                          <img src="{% static "images/revi.png" %}">
+                      </div>
+                      <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="mdl-card mdl-cell demo-card-wide mdl-cell--6-col mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title" id="start">
+                        <h2 class="mdl-card__title-text">Start</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                          Virginity is proud to be serving fine European dishes for more than 30 years!
+                          <br>
+                          It resonates very nice with the fact of how universally cozy and welcoming our atmosphere is. All our customers say that when they eat at Resto, they feel like having a nice dinner at home. These are sweet words, which just melt our hearts with joy!
+                      </div>
+                      <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                        </button>
+                      </div>
+                    </div>
                     </div>
                 </section>
-                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                            <h2 class="mdl-cell mdl-cell--12-col">Start</h2>
-                            <div class="section__text mdl-cell mdl-cell--5-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h3>Verginity is proud to be serving fine European dishes for more than 30 years!</h3>
-                                <h4>It resonates very nice with the fact of how universally cozy and welcoming our atmosphere is. All our customers say that when they eat at Resto, they feel like having a nice dinner at home. These are sweet words, which just melt our hearts with joy!
-                                </h4>
-                                <br><br><br>
-                            </div>
-                            <div class="section__circle-container mdl-cell mdl-cell--7-col mdl-cell--1-col-phone">
-                                <image src="{% static "images/image2.jpg" %}" ></image>
-                            </div>
-                        </div>
+                <section class="section--center mdl-grid">
+                    <div class="mdl-grid">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title" id="euro">
+                        <h2 class="mdl-card__title-text">Casually European</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                          With our menu being centered around the casual European dishes, we have both Greek, French and Italian food...
+                      </div>
+                      <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                        </button>
+                      </div>
                     </div>
-                </section>
-                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                            <h2 class="mdl-cell mdl-cell--12-col">Our Standards</h2>
-                            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h3>Casually European</h3>
-                                <h4>With our menu being centered around the casual European dishes, we have both Greek, French and Italian food...
-                            </h4>
-                                </div>
-                            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h3>American Comfort</h3>
-                                <h4>Despite being a European restaurant, visiting our place feels just as casual as any traditional American restaurant would feel...
-                            </h4>
-                                </div>
-                            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h3>Event-friendly</h3>
-                                <h4>If you're considering celebrating a persoonal or a business occasion at our restaurant, all of our 3 big dining halls will be ready for you!
-                            </h4>
-                                </div>
-                        </div>
+                    <div class="mdl-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title" id="comfort">
+                        <h2 class="mdl-card__title-text">American Comfort</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                          Despite being a European restaurant, visiting our place feels just as casual as any traditional American restaurant would feel...
+                      </div>
+                      <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="mdl-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title" id="friendly">
+                        <h2 class="mdl-card__title-text">Event-friendly</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                          If you're considering celebrating a persoonal or a business occasion at our restaurant, all of our 3 big dining halls will be ready for you!
+                            </div>
+                      <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                        </button>
+                      </div>
+                    </div>
                     </div>
                 </section>
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
@@ -149,7 +174,7 @@
                                     <div class="go-top">
                                         <h2>Kitchen</h2>
                                         <p id="new_text">
-                                        <h3>Our modern kitchen is the heart of Verginity.</h3>
+                                        <h3>Our modern kitchen is the heart of Virginity.</h3>
                                         </p>
                                     </div>
                                 </div>
@@ -192,10 +217,8 @@
                     <div class="mdl-card mdl-cell mdl-cell--12-col" id="carera1">
                         <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                             <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <center>
                                 <h2 id="text_carera">Meet our Team</h2>
                                     <h3>Virginity is a family owned restaurant, which treasures the atmosphere just as much as the dining menu. We've assembled a strong team of professionals, all of whom aspire to constantly excel and step it up!</h3>
-                                </center>
                             </div>
                         </div>
                     </div>

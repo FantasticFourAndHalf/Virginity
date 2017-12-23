@@ -13,7 +13,7 @@ def login(request):
     return render(request, 'login.html')
 
 
-# @login_required(login_url='/login/')
+@login_required(login_url='/login/')
 def menu(request):
     context = {'dishes': []}
     for i in models.Dish.objects.all():
@@ -23,6 +23,7 @@ def menu(request):
     return render(request, 'menu.html', context)
 
 
+@login_required(login_url='/login/')
 def dish(request, dish_id):
     try:
         current_dish = models.Dish.objects.get(id=dish_id)
@@ -33,6 +34,7 @@ def dish(request, dish_id):
         return HttpResponse(404)
 
 
+@login_required(login_url='/login/')
 def add_to_cart(request, dish_id):
     dish = models.Dish.objects.get(id=dish_id)
     try:
@@ -44,12 +46,14 @@ def add_to_cart(request, dish_id):
     return HttpResponse('OK')
 
 
+@login_required(login_url='/login/')
 def delete_from_cart(request, item_id):
     cart = models.Cart.objects.get(id=item_id, user=request.user)
     cart.delete()
     return HttpResponse('OK')
 
 
+@login_required(login_url='/login/')
 def change_cart_amount(request, item_id, amount):
     cart = models.Cart.objects.get(id=item_id, user=request.user)
     cart.multiplicity = amount
@@ -57,17 +61,38 @@ def change_cart_amount(request, item_id, amount):
     return HttpResponse('OK')
 
 
+@login_required(login_url='/login/')
+def order(request, order_id):
+    order = models.Order.objects.get(id=order_id, client=request.user.id)
+    if order is not None:
+        context = {'order': order,
+                   'items': []}
+        order_items = models.OrderItem.objects.filter(order=order)
+        for i in order_items:
+            picture = models.DishImage.objects.filter(to=i.dish)
+            i.dish.picture = picture[0]
+            context['items'].append(i)
+        return render(request, 'order.html', context)
+    else:
+        return menu(request)
+
+
+@login_required(login_url='/login/')
 def make_order(request):
-    order = models.Order(client=request.user)
-    order.save()
-    for i in models.Cart.objects.filter(user=request.user):
-        item = models.OrderItem(order=order, dish=i.dish, multiplicity=i.multiplicity)
-        item.save()
-        i.delete()
-    return order
+    cart = models.Cart.objects.filter(user=request.user)
+    if len(cart) > 0:
+        new_order = models.Order(client=request.user)
+        new_order.save()
+        for i in models.Cart.objects.filter(user=request.user):
+            item = models.OrderItem(order=new_order, dish=i.dish, multiplicity=i.multiplicity)
+            item.save()
+            i.delete()
+        return order(request, new_order.id)
+    else:
+        return menu(request)
 
 
-# @login_required
+@login_required(login_url='/login/')
 def phone_request(request):
     if request.method == 'POST':
         return HttpResponse("Okay.")
@@ -75,29 +100,18 @@ def phone_request(request):
         return render(request, 'phone.html')
 
 
-# @login_required
-def order(request, order_id):
-    order = models.Order.objects.get(id=order_id, client=request.user.id)
-    if order is not None:
-        context = {'order': order,
-                   'items': []}
-        order_items = models.OrderItem.objects.filter(order=order)
-        for item in order_items:
-            context['items'].append(item)
-        return render(request, 'order.html', context)
-
-
+@login_required(login_url='/login/')
 def basket(request):
-    cart = models.Cart.objects.all()  # filter(user=request.user)
+    cart = models.Cart.objects.filter(user=request.user)
     context = {'items': []}
     for i in cart:
         picture = models.DishImage.objects.filter(to=i.dish)
         i.dish.picture = picture[0]
-        print(i.dish.picture)
         context['items'].append(i)
     return render(request, 'basket.html', context)
 
 
+@login_required(login_url='/login/')
 def user(request):
     orders = models.Order.objects.filter(client=request.user)
     context = {'orders': order}

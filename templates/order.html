@@ -2,22 +2,8 @@
 
 
 {% block content %}
-<script>
-
-    function changeCountOfProduct(id, item) {
-        getTotalSum();
-        if (item.value == 0) {
-            deleteFromBasket(id,item);
-        } else {
-            var url = "/cart/amount/"+id+"/"+item.value;
-            $.ajax({
-              url: url,
-              type: "GET"
-            });
-        }
-    }
-
-    function getTotalSum() {
+    <script>
+        function getTotalSum() {
        var sum = 0;
        var menu = document.querySelector('div[id=menu]');
        var prices = menu.querySelectorAll("[id=price]");
@@ -27,23 +13,7 @@
        }
        menu.querySelector('[id=totalPrice]').innerHTML = sum+"$";
     }
-
-    window.onload = getTotalSum;
-
-    function deleteFromBasket(id, item) {
-       var url = "/cart/delete/"+id;
-       $.ajax({
-          url: url,
-          type: "GET"
-       });
-       while(true) {
-        item = item.parentElement;
-        if (item.id == "menuItem") break;
-       }
-       item.parentElement.removeChild(item);
-       console.log(arguments);
-    }
-</script>
+    </script>
 <div class="mdl-grid" onload="getTotal()">
     <div class="mdl-layout-spacer"></div>
     <div id="menu">
@@ -85,19 +55,8 @@
                     </span>
                 </td>
                 <td class="number-of-servings">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" onchange="changeCountOfProduct({{i.id}}, this)" id="count"
-                        value="{{ i.multiplicity }}">
-                        <label class="mdl-textfield__label" for="count">Number...</label>
-                        <span class="mdl-textfield__error">Input is not a number!</span>
-                    </div>
+                    {{ i.multiplicity }}
                 </td>
-                <td class="">
-                    <button onclick="deleteFromBasket({{ i.id }}, this)" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-                        <i class="material-icons">delete</i>
-                    </button>
-                </td>
-
             </tr>
             {% endfor %}
         <tr>
