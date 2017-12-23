@@ -19,7 +19,7 @@
 }
 
 html, body {
-    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-family: 'Indie Flower', cursive;
     margin: 0;
     padding: 0;
 }
@@ -28,6 +28,7 @@ html, body {
 }
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
     font-size: inherit;
+    font-family: 'Indie Flower', cursive;
 }
 .mdl-demo .mdl-layout__tab-bar-button {
     display: none;
@@ -115,7 +116,7 @@ html, body {
     margin-bottom: 48px;
 }
 .mdl-demo section.section--center {
-    max-width: 860px;
+    max-width: 100%;
 }
 .mdl-demo #features section.section--center {
     max-width: 620px;
@@ -250,3 +251,17 @@ html, body {
     margin-bottom: 40px;
     z-index: 900;
 }
+#carera{
+     background-image: url("images/image3.jpg");
+}
+#text_carera{
+    color: white;
+    font-family: 'Risque', cursive;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Indie Flower', cursive; !important;
+}
+#carera1{
+     background-image: url("images/kosmos-zvezdy.jpg");
+}
+

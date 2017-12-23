@@ -26,6 +26,8 @@
     {%  endblock   %}
     {% include 'include/mdl.html' %}
     <link rel="stylesheet" href="{% static "styles.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
@@ -50,84 +52,80 @@
         {% block content %}
             <div class="mdl-layout__tab-panel is-active" id="overview">
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                        <i class="material-icons">play_circle_filled</i>
-                    </header>
-                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                        <div class="mdl-card__supporting-text">
-                            <h4>Development started</h4>
-                                Here would be new site.
-                        </div>
-                        <div class="mdl-card__actions">
-                            <a href="https://github.com/FantasticFourAndHalf/Virginity/README.md" class="mdl-button">Read our features</a>
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                            <h2 class="mdl-cell mdl-cell--12-col">History</h2>
+                            <div class="section__circle-container mdl-cell mdl-cell--7-col mdl-cell--1-col-phone">
+                                <image src="{% static "images/image1.jpg" %}" ></image>
+                            </div>
+                            <div class="section__text mdl-cell mdl-cell--5-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
+                                <h3>The Verginity Restaurant</h3>
+                                <h4>Verginity Restaurant & Bar is a traditional European cuisine venue, serving the best dishes and drinks from across the range of European cuisines. A definitive neighborhood joint in Davis Square, Resto offers a laid-back dining experience in a casual setting to guests from all walks of life. Honest food and honest drinks set the foundation of our place's menu!</h4>
+                                <br><br><br>
+                                <img src="{% static "images/winner.png" %}">
+                                <img src="{% static "images/choice.png" %}">
+                            </div>
                         </div>
                     </div>
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-                        <i class="material-icons">more_vert</i>
-                    </button>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-                        <li class="mdl-menu__item">Lorem</li>
-                        <li class="mdl-menu__item" disabled>Ipsum</li>
-                        <li class="mdl-menu__item">Dolor</li>
-                    </ul>
                 </section>
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
                         <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                            <h4 class="mdl-cell mdl-cell--12-col">Features</h4>
-                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                <div class="section__circle-container__circle mdl-color--primary"></div>
+                            <h2 class="mdl-cell mdl-cell--12-col">Start</h2>
+                            <div class="section__text mdl-cell mdl-cell--5-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h3>Verginity is proud to be serving fine European dishes for more than 30 years!</h3>
+                                <h4>It resonates very nice with the fact of how universally cozy and welcoming our atmosphere is. All our customers say that when they eat at Resto, they feel like having a nice dinner at home. These are sweet words, which just melt our hearts with joy!
+                                </h4>
+                                <br><br><br>
                             </div>
-                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h5>Order Table</h5>
-                                You can order custom table in custom time just in one click.
+                            <div class="section__circle-container mdl-cell mdl-cell--7-col mdl-cell--1-col-phone">
+                                <image src="{% static "images/image2.jpg" %}" ></image>
                             </div>
-                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                <div class="section__circle-container__circle mdl-color--primary"></div>
-                            </div>
-                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h5>Order Meals</h5>
-                                You can order meals with delivery or link it to pre ordered table.
-                            </div>
-                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                                <div class="section__circle-container__circle mdl-color--primary"></div>
-                            </div>
-                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                <h5>Bonuses</h5>
-                                After each order from your accounts you can get bonuses and discounts.
-                            </div>
-                        </div>
-                        <div class="mdl-card__actions">
-                            <a href="#" class="mdl-button">Read more</a>
                         </div>
                     </div>
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-                        <i class="material-icons">more_vert</i>
-                    </button>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-                        <li class="mdl-menu__item">Lorem</li>
-                        <li class="mdl-menu__item" disabled>Ipsum</li>
-                        <li class="mdl-menu__item">Dolor</li>
-                    </ul>
                 </section>
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text">
-                            <h4>Technology</h4>
-                            Django, MDL, JQuery and even more.
-                        </div>
-                        <div class="mdl-card__actions">
-                            <a href="https://github.com/FantasticFourAndHalf/Virginity" class="mdl-button">Git</a>
+                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                            <h4 class="mdl-cell mdl-cell--12-col">Our Standards</h4>
+                            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h3>Casually European</h3>
+                                <h4>With our menu being centered around the casual European dishes, we have both Greek, French and Italian food...
+                            </h4>
+                                </div>
+                            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h3>American Comfort</h3>
+                                <h4>Despite being a European restaurant, visiting our place feels just as casual as any traditional American restaurant would feel...
+                            </h4>
+                                </div>
+                            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h3>Event-friendly</h3>
+                                <h4>If you're considering celebrating a persoonal or a business occasion at our restaurant, all of our 3 big dining halls will be ready for you!
+                            </h4>
+                                </div>
                         </div>
                     </div>
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-                        <i class="material-icons">more_vert</i>
-                    </button>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-                        <li class="mdl-menu__item">Lorem</li>
-                        <li class="mdl-menu__item" disabled>Ipsum</li>
-                        <li class="mdl-menu__item">Dolor</li>
-                    </ul>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col" id="carera">
+                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h2 id="text_carera">We're hiring new culinary talents all the time! If you want to become a part of our culinary family and you have at least 6 months of prior experience of working at a restaurant, than contact us today!</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col" id="carera1">
+                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <center>
+                                <h2 id="text_carera">Meet our Team</h2>
+                                    <h3>Verginity is a family owned restaurant, which treasures the atmosphere just as much as the dining menu. We've assembled a strong team of professionals, all of whom aspire to constantly excel and step it up!</h3>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         {% endblock %}
