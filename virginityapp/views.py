@@ -12,7 +12,7 @@ def index(request):
 def login(request):
     return render(request, 'login.html')
 
-@login_required(login_url='/login/')
+#@login_required(login_url='/login/')
 def menu(request):
     context = {'dishes': []}
     for i in models.Dish.objects.all():

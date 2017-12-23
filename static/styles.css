@@ -15,7 +15,7 @@
  */
 
 .mdl-layout__header {
-    background: url('images/header.jpg') center / cover;
+    background-color: #0f0f0f;
 }
 
 html, body {
@@ -99,7 +99,6 @@ html, body {
 .mdl-demo .mdl-card__actions a:hover,
 .mdl-demo .mdl-card__actions a:active {
     color: inherit;
-    background-color: transparent;
 }
 .mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
