@@ -24,4 +24,6 @@ urlpatterns = [
 
     url(r'^order/(?P<order_id>[0-9]+)', views.order),
     url(r'^order/', views.make_order),
+
+    url(r'^reservation/', views.reservation)
 ]

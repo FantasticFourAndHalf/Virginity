@@ -121,7 +121,7 @@ class Table(models.Model):
 class Reservation(models.Model):
     client = models.ForeignKey(User, related_name='reservation_client', blank=True)
     table = models.ForeignKey(Table, related_name='reservation_table')
-    order = models.ForeignKey(Order, related_name='reservation_order')
+    order = models.ForeignKey(Order, related_name='reservation_order', blank=True, null=True)
     date = models.DateTimeField(blank=False)
 
     def __str__(self):

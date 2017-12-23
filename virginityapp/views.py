@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -116,3 +118,15 @@ def user(request):
     orders = models.Order.objects.filter(client=request.user)
     context = {'orders': order}
     return render(request, 'user.html', context)
+
+
+@login_required(login_url='/login/')
+def reservation(request):
+    context = {'tables': []}
+    now = datetime.now()
+    for i in models.Table.objects.all():
+        i.reserved = []
+        for j in models.Reservation.objects.filter(table=i):
+            i.reserved.append(j)
+        context['tables'].append(i)
+    return render(request, 'reservation.html', context)

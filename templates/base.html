@@ -293,9 +293,18 @@
         {% endblock %}
     </main>
 </div>
-<a href="/basket" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-    <i class="material-icons" role="presentation">shopping_basket</i>
-    <span class="visuallyhidden">Add</span></a>
+{% block button %}
+<a href={% block button_href %}
+            "/basket"
+        {%  endblock %}
+   target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+    <i class="material-icons" role="presentation">
+        {% block button_icon %}
+            shopping_basket
+        {% endblock %}
+    </i>
+</a>
+{% endblock %}
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 </html>
