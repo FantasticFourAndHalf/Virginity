@@ -19,4 +19,5 @@ urlpatterns = [
 
     url(r'^cart/(?P<dish_id>[0-9]+)', views.add_to_cart),
     url(r'^cart/delete/(?P<item_id>[0-9]+)', views.delete_from_cart),
+    url(r'^user/', views.user)
 ]

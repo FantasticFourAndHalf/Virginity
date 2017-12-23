@@ -33,6 +33,7 @@ def dish(request, dish_id):
         return HttpResponse(404)
 
 
+# TODO: Sum similar
 def add_to_cart(request, dish_id):
     dish = models.Dish.objects.get(id=dish_id)
     item = models.Cart(user=request.user, dish=dish)
@@ -84,3 +85,9 @@ def basket(request):
         print(i.dish.picture)
         context['items'].append(i)
     return render(request, 'basket.html', context)
+
+
+def user(request):
+    orders = models.Order.objects.filter(client=user)
+    context = {'orders': order}
+    return render(request, 'user.html', context)
