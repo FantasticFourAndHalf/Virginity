@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97cfb71-a135-4bc7-8b93-ef95480e0e3b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/material.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/material.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-8.jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/Virginity.iml" afterPath="$PROJECT_DIR$/.idea/Virginity.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/npm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" afterPath="$PROJECT_DIR$/static/styles.css" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/include/mdl.html" afterPath="$PROJECT_DIR$/templates/include/mdl.html" />
-      <change beforePath="$PROJECT_DIR$/virginityapp/views.py" afterPath="$PROJECT_DIR$/virginityapp/views.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +35,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="76" column="29" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+            <state relative-caret-position="510">
+              <caret line="90" column="26" lean-forward="false" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -163,6 +136,9 @@
       </map>
     </option>
     <option name="RESET_MODE" value="MIXED" />
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="rage" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -628,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508836633731</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="CleanUp">
+      <created>1514027904496</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1514027904496</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -745,7 +728,8 @@
     <MESSAGE value="Gift Cards :clubs:&#10;&#10;- Gift card Model.&#10;- Gift card available in admin." />
     <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр за допомогою List.js&#10;- Gift card Mod" />
     <MESSAGE value="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gift Cards :clubs:&#10;Зробив фільтр та пошук по меню за допомогою List.js&#10;- Gift card Mod" />
+    <MESSAGE value="CleanUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="CleanUp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,8 +1008,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="76" column="29" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+        <state relative-caret-position="510">
+          <caret line="90" column="26" lean-forward="false" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
           <folding />
         </state>
       </provider>
