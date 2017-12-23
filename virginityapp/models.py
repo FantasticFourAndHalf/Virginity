@@ -104,6 +104,7 @@ class Order(models.Model):
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name='order_item_order', blank=False)
     dish = models.ForeignKey(Dish, related_name='order_item_dish')
+    multiplicity = models.IntegerField(default=1)
 
     def __str__(self):
         return str(self.dish) + "->" + str(self.order.id)

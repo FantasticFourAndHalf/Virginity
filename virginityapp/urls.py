@@ -14,5 +14,9 @@ urlpatterns = [
     url(r'^phone/', views.phone_request),
     url(r'^menu/', views.menu),
     url(r'^dish/(?P<dish_id>[0-9]+)', views.dish),
-    url(r'^basket/', views.basket)
+    url(r'^basket/', views.basket),
+
+
+    url(r'^cart/(?P<dish_id>[0-9]+)', views.add_to_cart),
+    url(r'^cart/delete/(?P<item_id>[0-9]+)', views.delete_from_cart),
 ]

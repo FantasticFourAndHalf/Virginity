@@ -12,7 +12,8 @@ def index(request):
 def login(request):
     return render(request, 'login.html')
 
-#@login_required(login_url='/login/')
+
+# @login_required(login_url='/login/')
 def menu(request):
     context = {'dishes': []}
     for i in models.Dish.objects.all():
@@ -40,7 +41,23 @@ def add_to_cart(request, dish_id):
         return HttpResponse('OK')
 
 
-@login_required
+def delete_from_cart(request, item_id):
+    cart = models.Cart.objects.get(id=item_id, user=request.user)
+    if request.method == 'DELETE':
+        cart.delete()
+
+
+def make_order(request):
+    order = models.Order(client=request.user)
+    order.save()
+    for i in models.Cart.objects.filter(user=request.user):
+        item = models.OrderItem(order=order, dish=i.dish, multiplicity=i.multiplicity)
+        item.save()
+        i.delete()
+    return order
+
+
+# @login_required
 def phone_request(request):
     if request.method == 'POST':
         return HttpResponse("Okay.")
@@ -48,7 +65,7 @@ def phone_request(request):
         return render(request, 'phone.html')
 
 
-@login_required
+# @login_required
 def order(request, order_id):
     order = models.Order.objects.get(id=order_id, client=request.user.id)
     if order is not None:
@@ -59,8 +76,9 @@ def order(request, order_id):
             context['items'].append(item)
         return render(request, 'order.html', context)
 
+
 def basket(request):
-    cart = models.Cart.objects.all()#filter(user=request.user)
+    cart = models.Cart.objects.all()  # filter(user=request.user)
     context = {'items': []}
     for i in cart:
         picture = models.DishImage.objects.filter(to=i.dish)
