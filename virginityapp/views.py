@@ -33,10 +33,13 @@ def dish(request, dish_id):
         return HttpResponse(404)
 
 
-# TODO: Sum similar
 def add_to_cart(request, dish_id):
     dish = models.Dish.objects.get(id=dish_id)
-    item = models.Cart(user=request.user, dish=dish)
+    try:
+        item = models.Cart.objects.get(dish=dish_id, user=request.user)
+        item.multiplicity += 1
+    except models.Cart.DoesNotExist:
+        item = models.Cart(user=request.user, dish=dish)
     item.save()
     return HttpResponse('OK')
 
@@ -44,6 +47,14 @@ def add_to_cart(request, dish_id):
 def delete_from_cart(request, item_id):
     cart = models.Cart.objects.get(id=item_id, user=request.user)
     cart.delete()
+    return HttpResponse('OK')
+
+
+def change_cart_amount(request, item_id, amount):
+    cart = models.Cart.objects.get(id=item_id, user=request.user)
+    cart.multiplicity = amount
+    cart.save()
+    return HttpResponse('OK')
 
 
 def make_order(request):
@@ -88,6 +99,6 @@ def basket(request):
 
 
 def user(request):
-    orders = models.Order.objects.filter(client=user)
+    orders = models.Order.objects.filter(client=request.user)
     context = {'orders': order}
     return render(request, 'user.html', context)
