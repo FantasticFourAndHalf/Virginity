@@ -60,7 +60,7 @@ html, body {
 }
 .mdl-demo main > .mdl-layout__tab-panel {
     padding: 8px;
-    padding-top: 48px;
+    padding-top: 10px;
 }
 .mdl-demo .mdl-card {
     height: auto;
@@ -262,5 +262,29 @@ h1, h2, h3, h4, h5, h6{
 }
 #carera1{
      background-image: url("images/kosmos-zvezdy.jpg");
+}
+
+.go-top
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    top: 600px;
+    width: 400px;
+    height: 350px;
+    margin-top: 48px;
+    text-align:center;
+    font-size: 20px;
+    padding: 95px;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-top
+{
+    top:0px;
+}
+.go-top p
+{
+    font-size: 12px;
 }
 

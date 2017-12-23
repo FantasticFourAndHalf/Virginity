@@ -12,8 +12,7 @@ def index(request):
 def login(request):
     return render(request, 'login.html')
 
-
-# @login_required(login_url='/login/')
+#@login_required(login_url='/login/')
 def menu(request):
     context = {'dishes': []}
     for i in models.Dish.objects.all():
@@ -33,17 +32,13 @@ def dish(request, dish_id):
         return HttpResponse(404)
 
 
-@login_required
-def add_to_cart(request, dish_id):
+def add_to_order(request, order_id, dish_id):
+    order = models.Order.objects.get(id=order_id, client=request.user.id)
     dish = models.Dish.objects.get(id=dish_id)
     if request.method == 'POST':
-        try:
-            item = models.Cart.objects.get(user=request.user, dish=dish)
-            item.multiplicity += 1
-        except models.Cart.DoesNotExist:
-            item = models.Cart(user=request.user, dish=dish)
-            item.order = order
-            item.dish = dish
+        item = models.OrderItem()
+        item.order = order
+        item.dish = dish
         item.save()
         return HttpResponse('OK')
 
@@ -57,18 +52,6 @@ def phone_request(request):
 
 
 @login_required
-def make_order(request):
-    cart = models.Cart.objects.filter(user=request.user)
-    order = models.Order(client=request.user)
-    order.save()
-    for i in cart:
-        for j in range(0, i.multiplicity):
-            item = models.OrderItem(order=order, dish=i.dish)
-            item.save()
-    return order
-
-
-@login_required
 def order(request, order_id):
     order = models.Order.objects.get(id=order_id, client=request.user.id)
     if order is not None:
@@ -79,9 +62,8 @@ def order(request, order_id):
             context['items'].append(item)
         return render(request, 'order.html', context)
 
-
 def basket(request):
-    cart = models.Cart.objects.all()  # filter(user=request.user)
+    cart = models.Cart.objects.all()#filter(user=request.user)
     context = {'items': []}
     for i in cart:
         picture = models.DishImage.objects.filter(to=i.dish)
