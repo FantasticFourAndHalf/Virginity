@@ -2,7 +2,50 @@
 
 
 {% block content %}
-<div class="mdl- grid">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+    function changeCountOfProduct(id, item) {
+        getTotalSum();
+        if (item.value == 0) {
+            deleteFromBasket(id,item);
+        } else {
+            var url = "/cart/amount/"+id+"/"+item.value;
+            $.ajax({
+              url: url,
+              type: "GET"
+            });
+        }
+    }
+
+    function getTotalSum() {
+       var sum = 0;
+       var menu = document.querySelector('div[id=menu]');
+       var prices = menu.querySelectorAll("[id=price]");
+       var counts = menu.querySelectorAll("[id=count]");
+       for(var i = 0; i < prices.length; i++) {
+           sum+=(+prices[i].innerHTML)*(+counts[i].value);
+       }
+       menu.querySelector('[id=totalPrice]').innerHTML = sum+"$";
+    }
+
+    window.onload = getTotalSum;
+
+    function deleteFromBasket(id, item) {
+       var url = "/cart/delete/"+id;
+       $.ajax({
+          url: url,
+          type: "GET"
+       });
+       while(true) {
+        item = item.parentElement;
+        if (item.id == "menuItem") break;
+       }
+       item.parentElement.removeChild(item);
+       console.log(arguments);
+    }
+</script>
+<div class="mdl- grid" onload="getTotal()">
     <div class="mdl-layout-spacer"></div>
     <div id="menu">
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
@@ -20,9 +63,9 @@
                 <th>Number of servings</th>
             </tr>
         </thead>
-        <tbody class="list">
+        <tbody  class="list">
             {% for i in items %}
-            <tr>
+            <tr id="menuItem">
                 <td hidden>{{ i.value.id }}</td>
                 <td class="mdl-data-table__cell--non-numeric">
                      <a href="/dish/{{i.dish.id}}">
@@ -39,19 +82,19 @@
                 <td class="calories mdl-layout--large-screen-only">{{ i.dish.calories }}</td>
                 <td class="price">
                     <span class="mdl-chip">
-                        <span class="mdl-chip__text">{{ i.dish.price }}</span>
+                        <span class="mdl-chip__text" id="price">{{ i.dish.price }}</span>
                     </span>
                 </td>
                 <td class="number-of-servings">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4"
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" onchange="changeCountOfProduct({{i.id}}, this)" id="count"
                         value="{{ i.multiplicity }}">
-                        <label class="mdl-textfield__label" for="sample4">Number...</label>
+                        <label class="mdl-textfield__label" for="count">Number...</label>
                         <span class="mdl-textfield__error">Input is not a number!</span>
                     </div>
                 </td>
                 <td class="">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                    <button onclick="deleteFromBasket({{ i.id }}, this)" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
                         <i class="material-icons">delete</i>
                     </button>
                 </td>
@@ -59,7 +102,7 @@
             </tr>
             {% endfor %}
         <tr>
-            <td>Total price</td>
+            <td>Total price</td><td colspan="10"><h1 id="totalPrice"></h1></td>
         </tr>
         </tbody>
         </table>

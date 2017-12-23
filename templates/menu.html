@@ -2,7 +2,16 @@
 
 
 {% block content %}
-
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    function addToBasket(id) {
+       var url = "/cart/"+id;
+       $.ajax({
+          url: url,
+          type: "GET"
+        });
+    }
+</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 <div class="mdl-grid">
     <div class="mdl-layout-spacer"></div>
@@ -62,7 +71,7 @@
                     </span>
                 </td>
                 <td>
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                    <button onclick="addToBasket({{ i.value.id }})" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
                         <i class="material-icons">add</i>
                     </button>
                 </td>
